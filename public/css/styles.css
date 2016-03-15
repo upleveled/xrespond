@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  cursor: default;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url("../fonts/proxima-nova-n4.woff2") format("woff2"), url("../fonts/proxima-nova-n4.woff") format("woff");
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  font-weight: 600;
+  src: url("../fonts/proxima-nova-n6.woff2") format("woff2"), url("../fonts/proxima-nova-n6.woff") format("woff");
+}
+
+html {
+  background: #ffffff;
+  color: #34495e;
+  font-family: Proxima Nova, sans-serif;
+  line-height: 1;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+
+.main {
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.toolbar {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+/*# sourceMappingURL=styles.css.map */
