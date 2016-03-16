@@ -12,8 +12,17 @@ html {
   cursor: default;
 }
 
+[data-whatinput="mouse"] a:focus,
+[data-whatinput="touch"] a:focus {
+  outline: none;
+}
+
 body {
   margin: 0;
+}
+
+svg {
+  vertical-align: middle;
 }
 
 @font-face {
@@ -45,20 +54,68 @@ html {
 }
 
 .header {
+  background: #ecf0f1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
+  padding: 1.25em 2.5em;
 }
 
 .main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
+  overflow: auto;
+}
+
+.main__wrap {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 2.5em 0 0 2.5em;
+}
+
+.main__wrap--stretch {
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+              -ms-grid-row-align: stretch;
+          align-items: stretch;
 }
 
 .toolbar {
+  box-shadow: 0 0.125em 0.25em rgba(52, 73, 94, 0.25);
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
+  padding: 1.25em 2.5em;
+}
+
+.logo {
+  margin-right: 2.5em;
+}
+
+.logo__type {
+  height: 2.5em;
+  width: 13.05875em;
+}
+
+.source {
+  background-color: rgba(255, 0, 255, 0.125);
+}
+
+.source__wrap {
+  background-color: rgba(255, 0, 255, 0.125);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@
 // Generic
 @import "generic/box-model";
 @import "generic/cursors";
+@import "generic/focus";
 @import "generic/reset";
 @import "generic/web-fonts";
 
@@ -21,3 +22,6 @@
 @import "components/header";
 @import "components/main";
 @import "components/toolbar";
+
+@import "components/logo";
+@import "components/source";
