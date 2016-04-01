@@ -1,0 +1,14 @@
+.device {
+  flex: none;
+  padding: 0 2.5em 2.5em 0;
+
+  .main__wrap--stretch & {
+    display: flex;
+  }
+}
+
+.device__wrap {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
