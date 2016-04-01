@@ -1,4 +1,4 @@
-[data-whatinput="mouse"] a:focus,
-[data-whatinput="touch"] a:focus {
-  outline: none;
+[data-whatinput="mouse"] :focus,
+[data-whatinput="touch"] :focus {
+  outline: 0;
 }
