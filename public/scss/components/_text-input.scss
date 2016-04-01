@@ -1,0 +1,11 @@
+.text-input {
+  border-radius: 0.25rem;
+  border: 0;
+  height: 2.5rem;
+  padding: 0 0.625rem;
+
+  &::placeholder {
+    color: mix($white, $wet-asphalt, 50%);
+    opacity: 1;
+  }
+}

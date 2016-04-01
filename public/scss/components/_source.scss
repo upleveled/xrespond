@@ -1,7 +1,13 @@
 .source {
-  background-color: rgba(#f0f, 0.125);
+
 }
 
 .source__wrap {
-  background-color: rgba(#f0f, 0.125);
+  display: flex;
+}
+
+.source__text-input {
+  font-size: 1.25em;
+  margin-right: 0.625rem;
+  width: 30rem;
 }

@@ -2,7 +2,19 @@ iframe {
   border: 0;
 }
 
-body {
+button,
+input {
+  font-family: inherit;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+body,
+button,
+input {
   margin: 0;
 }
 

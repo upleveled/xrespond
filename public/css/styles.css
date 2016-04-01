@@ -21,7 +21,19 @@ iframe {
   border: 0;
 }
 
-body {
+button,
+input {
+  font-family: inherit;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+body,
+button,
+input {
   margin: 0;
 }
 
@@ -56,6 +68,49 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
+}
+
+.button {
+  background: #bdc3c7;
+  border-radius: 0.25em;
+  border: 0;
+  font-weight: 600;
+  min-height: 2.5em;
+  min-width: 7.5em;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.button--submit {
+  background: #4aa3df;
+  color: #ffffff;
+}
+
+.text-input {
+  border-radius: 0.25rem;
+  border: 0;
+  height: 2.5rem;
+  padding: 0 0.625rem;
+}
+
+.text-input::-webkit-input-placeholder {
+  color: #9aa4af;
+  opacity: 1;
+}
+
+.text-input::-moz-placeholder {
+  color: #9aa4af;
+  opacity: 1;
+}
+
+.text-input:-ms-input-placeholder {
+  color: #9aa4af;
+  opacity: 1;
+}
+
+.text-input::placeholder {
+  color: #9aa4af;
+  opacity: 1;
 }
 
 .header {
@@ -141,12 +196,16 @@ html {
   width: 13.05875em;
 }
 
-.source {
-  background-color: rgba(255, 0, 255, 0.125);
+.source__wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.source__wrap {
-  background-color: rgba(255, 0, 255, 0.125);
+.source__text-input {
+  font-size: 1.25em;
+  margin-right: 0.625rem;
+  width: 30rem;
 }
 
 .viewport {
