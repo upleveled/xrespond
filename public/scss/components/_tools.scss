@@ -1,0 +1,35 @@
+.tools {
+
+}
+
+.tools--device-height {
+  margin-left: auto;
+}
+
+.tools__wrap {
+  align-items: center;
+  display: flex;
+}
+
+.tools__title {
+  color: $concrete;
+  margin-right: 0.625em;
+}
+
+.tools__button {
+  border-radius: 0;
+
+  &:first-of-type {
+    border-bottom-left-radius: 0.25em;
+    border-top-left-radius: 0.25em;
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 0.0625em;
+  }
+}

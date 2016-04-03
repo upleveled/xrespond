@@ -1,0 +1,16 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625em 1.25em;
+}
+
+.search__title {
+  align-self: flex-start;
+  color: $concrete;
+  font-size: 0.75em;
+  margin-bottom: 0.625rem;
+}
+
+.search__text-input {
+  background: $clouds;
+}

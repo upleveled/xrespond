@@ -1,16 +1,17 @@
 .viewport {
+  background-color: $white;
   background-image:
     linear-gradient(45deg, $clouds 25%, transparent 25%, transparent 75%, $clouds 75%),
     linear-gradient(45deg, $clouds 25%, transparent 25%, transparent 75%, $clouds 75%);
   background-position: 0 0, 0.5em 0.5em;
   background-size: 1em 1em;
-  border: 1px solid $silver;
+  border: 0.0625em solid $silver;
   display: flex;
   flex: auto;
+  margin-top: 1.25em;
 }
 
 .viewport__frame {
-
   .main__wrap--stretch & {
     height: auto !important;
     min-height: 100%; // IE & Edge fix

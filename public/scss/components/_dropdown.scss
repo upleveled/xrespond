@@ -1,0 +1,11 @@
+.dropdown {
+  background: $white;
+  border-radius: 0.25em;
+  border: 0.0625em solid $silver;
+  box-shadow: 0 0.125em 0.25em rgba($wet-asphalt, 0.25);
+  position: absolute;
+}
+
+.dropdown--device {
+  width: 17.5em;
+}

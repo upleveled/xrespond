@@ -10,6 +10,7 @@
     <title>XRespond</title>
 
 
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -55,12 +56,12 @@
         <!-- /logo -->
 
 
-        <form class="source" id="source">
+        <div class="source" id="source">
           <div class="source__wrap">
-            <input class="text-input source__text-input" type="text" placeholder="Enter URL">
-            <button class="button button--submit" type="submit">Respond</button>
+            <input class="text-input text-input--medium source__text-input" placeholder="Enter URL">
+            <button class="button button--medium button--submit source__button">Respond</button>
           </div>
-        </form>
+        </div>
         <!-- /source -->
 
       </header>
@@ -71,7 +72,14 @@
 
       <div class="toolbar">
 
-        toolbar
+        <div class="tools tools--device-height" id="device-height">
+          <div class="tools__wrap">
+            <div class="tools__title">Device height</div>
+            <button class="button button--medium tools__button">Default</button>
+            <button class="button button--medium tools__button">Stretch</button>
+          </div>
+        </div>
+        <!-- /tools -->
 
       </div>
       <!-- /toolbar -->
@@ -79,22 +87,79 @@
 
 
 
-      <main class="main">
+      <main class="main" id="main">
         <div class="main__wrap">
 
-
-          <article class="device">
+          <div class="device">
             <div class="device__wrap">
 
+              <div class="tools">
+                <div class="tools__wrap">
+                  <button class="button button--medium tools__button">iPhone 6 (375 × 667 dp)</button>
+                </div>
+              </div>
+              <!-- /tools -->
+
+
+              <div class="dropdown dropdown--device">
+
+                <div class="search">
+                  <label class="search__title" for="____">Search for device</label>
+                  <input class="text-input text-input--small search__text-input" id="____" placeholder="Type, name, screen size">
+                </div>
+                <!-- /search -->
+
+
+                <div class="menu">
+                  <div class="menu__section">
+                    <div class="menu__title">Handset</div>
+                    <div class="menu-list">
+                      <div class="menu-list__item" tabindex="0">
+                        <div class="menu-list__title">iPhone 6</div>
+                        <div class="menu-list__description">375 × 667 dp</div>
+                      </div>
+                      <div class="menu-list__item" tabindex="0">
+                        <div class="menu-list__title">iPhone 6</div>
+                        <div class="menu-list__description">375 × 667 dp</div>
+                      </div>
+                      <div class="menu-list__item" tabindex="0">
+                        <div class="menu-list__title">iPhone 6</div>
+                        <div class="menu-list__description">375 × 667 dp</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__section">
+                    <div class="menu__title">Laptop</div>
+                    <div class="menu-list">
+                      <div class="menu-list__item" tabindex="0">
+                        <div class="menu-list__title">MacBook Air 11</div>
+                        <div class="menu-list__description">1366 × 768 dp</div>
+                      </div>
+                      <div class="menu-list__item" tabindex="0">
+                        <div class="menu-list__title">MacBook Air 11</div>
+                        <div class="menu-list__description">1366 × 768 dp</div>
+                      </div>
+                      <div class="menu-list__item" tabindex="0">
+                        <div class="menu-list__title">MacBook Air 11</div>
+                        <div class="menu-list__description">1366 × 768 dp</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /menu -->
+
+              </div>
+              <!-- /dropdown -->
+
+
               <div class="viewport">
-                <iframe class="viewport__frame" src="http://localhost" style="width: 300px; height: 150px;"></iframe>
+                <iframe class="viewport__frame" src="http://localhost" style="width: 375px; height: 667px;"></iframe>
               </div>
               <!-- /viewport -->
 
             </div>
-          </article>
+          </div>
           <!-- /device -->
-
 
         </div>
       </main>
