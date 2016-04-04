@@ -234,6 +234,7 @@ html {
   border-radius: 0.25em;
   border: 0.0625em solid #bdc3c7;
   box-shadow: 0 0.125em 0.25em rgba(52, 73, 94, 0.25);
+  overflow: hidden;
   position: absolute;
 }
 
@@ -249,15 +250,6 @@ html {
 .menu {
   max-height: 20em;
   overflow-y: auto;
-  padding-top: 0.625em;
-}
-
-.search + .menu {
-  padding-top: 0;
-}
-
-.menu__section:last-child {
-  margin-bottom: 0.625em;
 }
 
 .menu__title {
@@ -291,6 +283,10 @@ html {
 
 .menu__title::after {
   margin-left: 0.625em;
+}
+
+.menu-list {
+  margin: 0.625em 0;
 }
 
 .menu-list__item {
