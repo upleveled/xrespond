@@ -53,6 +53,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/public\/js\/lib\/devices.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/lib\/devices.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/public\/js\/lib\/devices-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/public\/js\/lib\/react-dom.js": {
 		"fileType": 64,
 		"ignore": 1,
