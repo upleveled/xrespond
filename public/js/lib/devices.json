@@ -121,7 +121,7 @@
   },
   {
     "type": "Laptop",
-    "name": "Apple MacBook Pro 15.4\"",
+    "name": "Apple MacBook Air 13.3\"",
     "width": 1440,
     "height": 900,
     "rotation": false,
@@ -132,6 +132,14 @@
     "name": "Microsoft Surface Book",
     "width": 1500,
     "height": 1000,
+    "rotation": false,
+    "orientation": "landscape"
+  },
+  {
+    "type": "Laptop",
+    "name": "Apple MacBook Pro 15.4\"",
+    "width": 1680,
+    "height": 1050,
     "rotation": false,
     "orientation": "landscape"
   },
