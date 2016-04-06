@@ -114,7 +114,7 @@ html {
 }
 
 .text-input {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   border: 0;
   color: inherit;
   font-family: inherit;
@@ -147,8 +147,9 @@ html {
 }
 
 .text-input--medium {
-  height: 2.5em;
-  padding: 0 0.625em;
+  font-size: 1.25em;
+  height: 2.5rem;
+  padding: 0 0.625rem;
 }
 
 .header {
@@ -350,7 +351,7 @@ html {
 }
 
 .source__text-input {
-  width: 30em;
+  width: 30rem;
 }
 
 .source__button {
