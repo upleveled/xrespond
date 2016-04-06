@@ -237,7 +237,7 @@ html {
 .dropdown {
   background: #ffffff;
   border-radius: 0.25em;
-  border: 0.0625em solid #bdc3c7;
+  border: 1px solid #bdc3c7;
   box-shadow: 0 0.125em 0.25em rgba(52, 73, 94, 0.25);
   overflow: hidden;
   position: absolute;
@@ -275,7 +275,7 @@ html {
 }
 
 .menu__title::before, .menu__title::after {
-  border-top: 0.0625em solid #bdc3c7;
+  border-top: 1px solid #bdc3c7;
   content: "";
   -webkit-flex: auto;
       -ms-flex: auto;
@@ -397,7 +397,7 @@ html {
 }
 
 .tools__button:not(:last-child) {
-  margin-right: 0.0625em;
+  margin-right: 1px;
 }
 
 .viewport {
@@ -405,7 +405,7 @@ html {
   background-image: linear-gradient(45deg, #ecf0f1 25%, transparent 25%, transparent 75%, #ecf0f1 75%), linear-gradient(45deg, #ecf0f1 25%, transparent 25%, transparent 75%, #ecf0f1 75%);
   background-position: 0 0, 0.5em 0.5em;
   background-size: 1em 1em;
-  border: 0.0625em solid #bdc3c7;
+  border: 1px solid #bdc3c7;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

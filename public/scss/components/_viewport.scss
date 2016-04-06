@@ -5,7 +5,7 @@
     linear-gradient(45deg, $clouds 25%, transparent 25%, transparent 75%, $clouds 75%);
   background-position: 0 0, 0.5em 0.5em;
   background-size: 1em 1em;
-  border: 0.0625em solid $silver;
+  border: 1px solid $silver;
   display: flex;
   flex: auto;
   margin-top: 1.25em;

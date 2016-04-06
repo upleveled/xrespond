@@ -19,7 +19,7 @@
 
   &::before,
   &::after {
-    border-top: 0.0625em solid $silver;
+    border-top: 1px solid $silver;
     content: "";
     flex: auto;
   }
