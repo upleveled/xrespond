@@ -1,6 +1,6 @@
 [
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Apple iPhone 5",
     "width": 320,
     "height": 568,
@@ -8,7 +8,7 @@
     "orientation": "portrait"
   },
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Google Nexus 5",
     "width": 360,
     "height": 640,
@@ -16,7 +16,7 @@
     "orientation": "portrait"
   },
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Apple iPhone 6",
     "width": 375,
     "height": 667,
@@ -24,7 +24,7 @@
     "orientation": "portrait"
   },
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Google Nexus 4",
     "width": 384,
     "height": 640,
@@ -32,7 +32,7 @@
     "orientation": "portrait"
   },
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Google Nexus 6",
     "width": 412,
     "height": 690,
@@ -40,7 +40,7 @@
     "orientation": "portrait"
   },
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Apple iPhone 6 Plus",
     "width": 414,
     "height": 736,
@@ -48,7 +48,7 @@
     "orientation": "portrait"
   },
   {
-    "type": "Smartphone",
+    "type": "Phone",
     "name": "Nokia Lumia 1520",
     "width": 432,
     "height": 768,
