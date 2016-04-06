@@ -113,6 +113,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/public\/scss\/components\/_device-height.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 4,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/scss\/components\/_device-height.scss",
+		"outputAbbreviatedPath": "\/public\/css\/_device-height.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/public\/scss\/components\/_device.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,

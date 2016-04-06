@@ -229,6 +229,10 @@ html {
   position: relative;
 }
 
+.device-height {
+  margin-left: auto;
+}
+
 .dropdown {
   background: #ffffff;
   border-radius: 0.25em;
@@ -353,11 +357,7 @@ html {
   margin-left: 0.625em;
 }
 
-.tools--device-height {
-  margin-left: auto;
-}
-
-.tools__wrap {
+.tools {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -371,21 +371,31 @@ html {
   margin-right: 0.625em;
 }
 
+.tools__group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tools__group:not(:last-child) {
+  margin-right: 0.625em;
+}
+
 .tools__button {
   border-radius: 0;
 }
 
-.tools__button:first-of-type {
+.tools__button:first-child {
   border-bottom-left-radius: 0.25em;
   border-top-left-radius: 0.25em;
 }
 
-.tools__button:last-of-type {
+.tools__button:last-child {
   border-bottom-right-radius: 0.25em;
   border-top-right-radius: 0.25em;
 }
 
-.tools__button:not(:last-of-type) {
+.tools__button:not(:last-child) {
   margin-right: 0.0625em;
 }
 

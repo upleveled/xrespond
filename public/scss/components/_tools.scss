@@ -1,12 +1,4 @@
 .tools {
-
-}
-
-.tools--device-height {
-  margin-left: auto;
-}
-
-.tools__wrap {
   align-items: center;
   display: flex;
 }
@@ -16,20 +8,28 @@
   margin-right: 0.625em;
 }
 
+.tools__group {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 0.625em;
+  }
+}
+
 .tools__button {
   border-radius: 0;
 
-  &:first-of-type {
+  &:first-child {
     border-bottom-left-radius: 0.25em;
     border-top-left-radius: 0.25em;
   }
 
-  &:last-of-type {
+  &:last-child {
     border-bottom-right-radius: 0.25em;
     border-top-right-radius: 0.25em;
   }
 
-  &:not(:last-of-type) {
+  &:not(:last-child) {
     margin-right: 0.0625em;
   }
 }
