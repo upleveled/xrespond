@@ -6,22 +6,41 @@
   font-family: inherit;
   font-size: inherit;
   font-weight: 600;
-  line-height: inherit;
   padding: 0;
   text-transform: uppercase;
 }
 
+
+// Sizes & shapes
 .button--small {
+  min-height: 2em;
   min-width: 3.75em;
-  padding: 0.5em 0.75em;
+  padding: 0 1em;
 }
 
 .button--medium {
+  min-height: 2.5em;
   min-width: 7.5em;
-  padding: 0.75em 1.125em;
+  padding: 0 1.25em;
 }
 
+.button--square {
+  padding: 0;
+
+  &.button--medium {
+    min-width: 2.5em;
+  }
+}
+
+
+// Colors
 .button--submit {
   background: $peter-river;
   color: $white;
+}
+
+
+// Elements
+.button__icon {
+  font-size: 1.5em;
 }
