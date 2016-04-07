@@ -433,6 +433,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/public\/scss\/objects\/_icon.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 4,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/scss\/objects\/_icon.scss",
+		"outputAbbreviatedPath": "\/public\/css\/_icon.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/public\/scss\/settings\/_colors.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -475,7 +491,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "XRespond",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_blue"
+	"iconImageName": "\/public\/images\/favicon.png"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,

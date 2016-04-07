@@ -85,6 +85,12 @@ html {
   overflow: hidden;
 }
 
+.icon {
+  fill: currentcolor;
+  height: 1em;
+  width: 1em;
+}
+
 .button {
   background: #bdc3c7;
   border-radius: 0.25em;
