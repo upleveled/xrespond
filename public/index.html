@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
   <head>
 
     <meta charset="utf-8">
@@ -34,28 +33,22 @@
   </head>
 
 
-
-
   <body>
+
+    <svg style="display: none;">
+      <symbol id="icon-rotate-screen" viewBox="0 0 24 24">
+        <path d="M16.48 2.52c3.27 1.55 5.61 4.72 5.97 8.48h1.5C23.44 4.84 18.29 0 12 0l-.66.03 3.81 3.81 1.33-1.32zm-6.25-.77c-.59-.59-1.54-.59-2.12 0L1.75 8.11c-.59.59-.59 1.54 0 2.12l12.02 12.02c.59.59 1.54.59 2.12 0l6.36-6.36c.59-.59.59-1.54 0-2.12L10.23 1.75zm4.6 19.44L2.81 9.17l6.36-6.36 12.02 12.02-6.36 6.36zm-7.31.29C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32z"/>
+      </symbol>
+    </svg>
+    <!-- /icons -->
 
 
     <div class="container">
 
-
-      <svg style="display: none;">
-        <symbol id="icon-rotate" viewBox="0 0 24 24">
-          <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
-        </symbol>
-      </svg>
-      <!-- /icons -->
-
-
-
-
       <header class="header">
 
         <a class="logo" href="/">
-          <svg class="logo__type" viewBox="0 0 208.94 40">
+          <svg class="logo__image" viewBox="0 0 208.94 40">
             <title>XRespond</title>
             <path fill="#e74c3c" d="M34.55 38.84c-9.7 1.55-19.39 1.55-29.09 0-1.98-.33-3.96-2.31-4.29-4.29-1.55-9.7-1.55-19.39 0-29.09.33-1.99 2.3-3.96 4.28-4.3 9.7-1.55 19.39-1.55 29.09 0 1.98.33 3.96 2.31 4.29 4.29 1.55 9.7 1.55 19.39 0 29.09-.33 1.99-2.3 3.96-4.28 4.3z"/>
             <path fill="#fff" d="M8.62 25.42c-.28-4.72-.22-9.43.24-14.15.12-1.19 1.22-2.3 2.42-2.42 4.71-.45 9.43-.52 14.14-.24L8.62 25.42zm5.96 5.96c4.71.28 9.43.21 14.14-.24 1.19-.12 2.3-1.22 2.42-2.42.45-4.71.52-9.43.24-14.14l-16.8 16.8z"/>
@@ -78,8 +71,6 @@
       <!-- /header -->
 
 
-
-
       <div class="toolbar">
 
         <div class="device-height" id="device-height">
@@ -100,8 +91,6 @@
       <!-- /toolbar -->
 
 
-
-
       <main class="main" id="main">
         <div class="main__wrap">
 
@@ -110,11 +99,11 @@
 
               <div class="tools">
                 <div class="tools__group">
-                  <button class="button button--medium tools__button device__button">Apple iPhone 6 (375 × 667 dp)</button>
+                  <button class="button button--medium tools__button device__button">Apple iPhone 5 ― 320 × 568 dp</button>
                   <button class="button button--medium button--square tools__button">
                     <svg class="icon button__icon">
-                      <title>Rotate device</title>
-                      <use xlink:href="#icon-rotate">
+                      <title>Rotate screen</title>
+                      <use xlink:href="#icon-rotate-screen">
                     </svg>
                   </button>
                 </div>
@@ -125,8 +114,8 @@
               <div class="dropdown dropdown--device">
 
                 <div class="search">
-                  <label class="search__title" for="____">Search for device</label>
-                  <input class="text-input text-input--small search__text-input" id="____" placeholder="Type, name, screen size">
+                  <div class="search__title">Search for device</div>
+                  <input class="text-input text-input--small search__text-input" placeholder="Type, name, screen size">
                 </div>
                 <!-- /search -->
 
@@ -189,10 +178,10 @@
               <!-- /dropdown -->
 
 
-              <div class="viewport">
-                <iframe class="viewport__frame" src="http://localhost" style="width: 375px; height: 667px;"></iframe>
+              <div class="screen">
+                <iframe class="screen__viewport"></iframe>
               </div>
-              <!-- /viewport -->
+              <!-- /screen -->
 
             </div>
           </div>
@@ -202,12 +191,9 @@
       </main>
       <!-- /main -->
 
-
     </div>
     <!-- /container -->
 
-
   </body>
-
 
 </html>

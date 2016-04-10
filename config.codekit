@@ -42,6 +42,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/js\/devices.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/devices.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/public\/js\/devices-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/public\/js\/lib\/autotrack.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -52,17 +63,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/public\/js\/lib\/devices.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/lib\/devices.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/public\/js\/lib\/devices-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
 		},
 	"\/public\/js\/lib\/react-dom.js": {
 		"fileType": 64,
@@ -100,7 +100,7 @@
 	"\/public\/scss\/components\/_button.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -116,7 +116,7 @@
 	"\/public\/scss\/components\/_custom-screen.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -132,7 +132,7 @@
 	"\/public\/scss\/components\/_device-control.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -148,7 +148,7 @@
 	"\/public\/scss\/components\/_device-height.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -164,7 +164,7 @@
 	"\/public\/scss\/components\/_device.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -180,7 +180,7 @@
 	"\/public\/scss\/components\/_dropdown.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -196,7 +196,7 @@
 	"\/public\/scss\/components\/_header.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -212,7 +212,7 @@
 	"\/public\/scss\/components\/_logo.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -228,7 +228,7 @@
 	"\/public\/scss\/components\/_main.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -244,7 +244,7 @@
 	"\/public\/scss\/components\/_menu.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -257,10 +257,26 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/public\/scss\/components\/_screen.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/scss\/components\/_screen.scss",
+		"outputAbbreviatedPath": "\/public\/css\/_screen.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/public\/scss\/components\/_search.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -276,7 +292,7 @@
 	"\/public\/scss\/components\/_source.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -292,7 +308,7 @@
 	"\/public\/scss\/components\/_text-input.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -308,7 +324,7 @@
 	"\/public\/scss\/components\/_toolbar.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -324,7 +340,7 @@
 	"\/public\/scss\/components\/_tools.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -337,26 +353,10 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
-	"\/public\/scss\/components\/_viewport.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 4,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/scss\/components\/_viewport.scss",
-		"outputAbbreviatedPath": "\/public\/css\/_viewport.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 1
-		},
 	"\/public\/scss\/elements\/_root.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -372,7 +372,7 @@
 	"\/public\/scss\/generic\/_box-model.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -388,7 +388,7 @@
 	"\/public\/scss\/generic\/_cursors.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -404,7 +404,7 @@
 	"\/public\/scss\/generic\/_focus.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -420,7 +420,7 @@
 	"\/public\/scss\/generic\/_reset.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -436,7 +436,7 @@
 	"\/public\/scss\/generic\/_web-fonts.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -452,7 +452,7 @@
 	"\/public\/scss\/objects\/_container.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -468,7 +468,7 @@
 	"\/public\/scss\/objects\/_icon.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -484,7 +484,7 @@
 	"\/public\/scss\/settings\/_colors.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -500,7 +500,7 @@
 	"\/public\/scss\/styles.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
-		"decimalPrecision": 4,
+		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -1118,7 +1118,7 @@
 	"sassAutoOutputPathStyle": 1,
 	"sassCreateSourceMap": 1,
 	"sassDebugStyle": 0,
-	"sassDecimalPrecision": 4,
+	"sassDecimalPrecision": 5,
 	"sassOutputStyle": 1,
 	"sassUseLibsass": 1,
 	"shouldRunAutoprefixer": 1,
