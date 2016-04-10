@@ -1,4 +1,4 @@
-[
+var Devices = [
   {
     "type": "Phone",
     "name": "Apple iPhone 5",
