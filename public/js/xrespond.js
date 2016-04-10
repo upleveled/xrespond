@@ -28,9 +28,11 @@ var Xrespond = {
 }
 
 MessageBus.subscribe(Xrespond.local, 'sourceSubmit',  Xrespond.local.updateAttr('url'))
+MessageBus.subscribe(Xrespond.local, 'deviceHeight', Xrespond.local.updateAttr('stretch'))
 
 var mount = function(component, id) {
   ReactDOM.render(component, document.getElementById(id))
 }
 
-mount(<XrespondSource />, 'source')
+mount(<XrespondSource />,       'source')
+mount(<XrespondDeviceHeight />, 'device-height')
