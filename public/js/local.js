@@ -11,7 +11,6 @@ XrespondLocal = function() {
     return JSON.parse(localStorage.getItem('xrespond')) || that.defaultState()
   }
   this.save = function(local) {
-    console.log(local) // @TODO hide via debugging flag?
     localStorage.setItem('xrespond', JSON.stringify(local))
   }
   this.attr = function(attr_name) {
