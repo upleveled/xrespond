@@ -9,11 +9,11 @@ var XrespondDevices = React.createClass({
     DeviceStore.registerAndInvoke(this._update)
   },
   componentDidMount: function() {
-    this.subscribe('deviceControl', this._onDeviceControl)
+    this.subscribe('deviceHeight', this._onDeviceControl)
   },
   componentWillUnmount: function() {
     DeviceStore.deregister(this._update)
-    this.unsubscribe('deviceControl')
+    this.unsubscribe('deviceHeight')
   },
   _onDeviceControl: function(control_value) {
     this.setState({stretchsize: control_value})
