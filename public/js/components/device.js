@@ -31,20 +31,22 @@ var XrespondDevice = React.createClass({
     device_title = this.state.name + ' ― ' + this.state.width + ' × ' + this.state.height + ' dp'
 
     return (
-      <div className="device__wrap">
-        <div className="tools">
-          <div className="tools__group">
-            <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>
-              {device_title}
-            </button>
-            <button className="button button--medium button--square tools__button" dangerouslySetInnerHTML={this.svg()}></button>
+      <div class='device'>
+        <div className="device__wrap">
+          <div className="tools">
+            <div className="tools__group">
+              <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>
+                {device_title}
+              </button>
+              <button className="button button--medium button--square tools__button" dangerouslySetInnerHTML={this.svg()}></button>
+            </div>
           </div>
-        </div>
 
-        {dropdownDevices}
+          {dropdownDevices}
 
-        <div className="screen">
-          <XrespondFrame name={device_title} id={this.props.id} />
+          <div className="screen">
+            <XrespondFrame name={device_title} id={this.props.id} />
+          </div>
         </div>
       </div>
     )
