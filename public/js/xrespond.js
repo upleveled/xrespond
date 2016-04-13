@@ -30,9 +30,37 @@ var Xrespond = {
 MessageBus.subscribe(Xrespond.local, 'sourceSubmit',  Xrespond.local.updateAttr('url'))
 MessageBus.subscribe(Xrespond.local, 'deviceHeight', Xrespond.local.updateAttr('stretch'))
 
+// @TODO: simplify store usage
+DeviceStore = BaseStore(Xrespond.local.attr('devices'))
+DeviceStore.register(Xrespond.local.updateAttr('devices'))
+
+DeviceStore.setCreateFunction(function(new_resource, internal) {
+  var newValue = React.addons.update(internal.currentValue, { $push: [new_resource] })
+  _.map(newValue, Xrespond.resetKeys)
+  DeviceStore.set(newValue)
+})
+
+DeviceStore.setUpdateFunction(function(new_resource, internal){
+  var r = _.find(internal.currentValue, function(resource) {
+    return resource.id == new_resource.id
+  })
+
+  var index = internal.currentValue.indexOf(r)
+  var newValue = React.addons.update(internal.currentValue, { $splice: [[index, 1, new_resource]] })
+  _.map(newValue, Xrespond.resetKeys)
+  DeviceStore.set(newValue)
+})
+
+DeviceStore.setRemoveFunction(function(index, internal){
+  var newValue = React.addons.update(internal.currentValue, { $splice: [[index, 1]] })
+  _.map(newValue, Xrespond.resetKeys)
+  DeviceStore.set(newValue)
+})
+
 var mount = function(component, id) {
   ReactDOM.render(component, document.getElementById(id))
 }
 
+mount(<XrespondDevices />, 'main')
 mount(<XrespondSource />,       'source')
 mount(<XrespondDeviceHeight />, 'device-height')
