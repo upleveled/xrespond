@@ -31,7 +31,7 @@ var XrespondDevice = React.createClass({
     device_title = this.state.name + ' ― ' + this.state.width + ' × ' + this.state.height + ' dp'
 
     return (
-      <div class='device'>
+      <div className='device'>
         <div className="device__wrap">
           <div className="tools">
             <div className="tools__group">
