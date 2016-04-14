@@ -12,6 +12,7 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rack-rewrite (1.5.1)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -42,6 +43,7 @@ PLATFORMS
 
 DEPENDENCIES
   httparty
+  rack-rewrite
   rspec
   shotgun
   sinatra (~> 1.4.5)
