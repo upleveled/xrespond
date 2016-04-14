@@ -18,6 +18,9 @@ var Xrespond = {
 
     return this.group_devices_by_type(matches)
   },
+  device_by_name: function(name) {
+    return _.find(this.devices(), function(d) { return d.name == name })
+  },
   group_devices_by_type: function(devices) {
     return _.groupBy(devices, function(d) { return d.type })
   },

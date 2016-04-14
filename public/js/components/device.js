@@ -22,6 +22,9 @@ var XrespondDevice = React.createClass({
     this.toggleExpanded()
   },
   svg: function() { return {__html: '<svg class="icon button__icon"><title>Rotate screen</title><use xlink:href="#icon-rotate-screen"></svg>'} },
+  toggleRotated: function() {
+    DeviceStore.update({id: this.props.id, width: this.state.height, height: this.state.width})
+  },
   render: function() {
 
     dropdownDevices = (this.state.expanded)
@@ -29,6 +32,7 @@ var XrespondDevice = React.createClass({
       : ''
 
     device_title = this.state.name + ' ― ' + this.state.width + ' × ' + this.state.height + ' dp'
+    rotate_button = <button className="button button--medium button--square tools__button" dangerouslySetInnerHTML={this.svg()} onClick={this.toggleRotated}></button>
 
     return (
       <div className='device'>
@@ -38,7 +42,7 @@ var XrespondDevice = React.createClass({
               <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>
                 {device_title}
               </button>
-              <button className="button button--medium button--square tools__button" dangerouslySetInnerHTML={this.svg()}></button>
+              {this.state.rotation ? rotate_button : ''}
             </div>
           </div>
 
