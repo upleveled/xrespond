@@ -40,12 +40,13 @@ DeviceStore.setCreateFunction(function(new_resource, internal) {
   DeviceStore.set(newValue)
 })
 
-DeviceStore.setUpdateFunction(function(new_resource, internal){
+DeviceStore.setUpdateFunction(function(new_attrs, internal){
   var r = _.find(internal.currentValue, function(resource) {
-    return resource.id == new_resource.id
+    return resource.id == new_attrs.id
   })
-
   var index = internal.currentValue.indexOf(r)
+
+  var new_resource = _.extend({}, r, new_attrs)
   var newValue = React.addons.update(internal.currentValue, { $splice: [[index, 1, new_resource]] })
   _.map(newValue, Xrespond.resetKeys)
   DeviceStore.set(newValue)
@@ -61,6 +62,6 @@ var mount = function(component, id) {
   ReactDOM.render(component, document.getElementById(id))
 }
 
-mount(<XrespondDevices />, 'main')
+mount(<XrespondDevices />,      'main')
 mount(<XrespondSource />,       'source')
 mount(<XrespondDeviceHeight />, 'device-height')

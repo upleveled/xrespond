@@ -15,10 +15,10 @@ var XrespondDevice = React.createClass({
   _update: function(devices) {
     var that = this
     device = _.filter(devices, function(d, index){ return index == that.props.id })
-    this.setState(_.extend(device[0], {expanded: false}))
+    this.setState(_.extend({}, device[0], {expanded: false}))
   },
   handleDropdownSubmit: function(attrs) {
-    DeviceStore.update(_.extend(attrs, {id: this.props.id}))
+    DeviceStore.update(_.extend({}, attrs, {id: this.props.id}))
     this.toggleExpanded()
   },
   svg: function() { return {__html: '<svg class="icon button__icon"><title>Rotate screen</title><use xlink:href="#icon-rotate-screen"></svg>'} },
