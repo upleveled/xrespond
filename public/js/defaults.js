@@ -9,7 +9,7 @@ XrespondDefaults = {
     ]
     return defaultDevices = _.map(deviceNames, function(name, i){
       var d = _.find(Devices, function(d) { return d.name == name })
-      return _.extend(d, {id: i})
+      return _.extend({}, d, {id: i})
     })
   },
   url: ''

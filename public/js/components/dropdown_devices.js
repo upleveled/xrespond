@@ -97,7 +97,7 @@ var XrespondDropdownDevices = React.createClass({
 
 var XrespondDropdownDevice = React.createClass({
   handleClick: function(e) {
-    this.props.handleSubmit(_.clone(this.props))
+    this.props.handleSubmit(Xrespond.device_by_name(this.props.name))
   },
   render: function() {
     var subtitle = this.props.subtitle ? this.props.subtitle : this.props.width + " × " + this.props.height + " dp"
