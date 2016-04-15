@@ -36,7 +36,7 @@ var XrespondDropdownDevices = React.createClass({
     })
     var empty = <div className="menu__section">
                   <div className="menu-list">
-                    <XrespondDropdownDevice name="No such device..." subtitle="Show all devices" handleSubmit={this.handleClear} />
+                    <XrespondDropdownDevice name="No device found" subtitle="Show all devices" handleSubmit={this.handleClear} />
                   </div>
                 </div>
 
