@@ -399,6 +399,7 @@ html {
       -ms-flex: auto;
           flex: auto;
   margin-top: 1.25em;
+  overflow: hidden;
 }
 
 .main__wrap--stretch .screen__viewport {
