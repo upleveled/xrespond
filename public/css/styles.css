@@ -102,6 +102,7 @@ html {
   line-height: inherit;
   padding: 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .button--small {
