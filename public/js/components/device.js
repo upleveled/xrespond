@@ -35,21 +35,17 @@ var XrespondDevice = React.createClass({
     rotate_button = <button className="button button--medium button--square tools__button" dangerouslySetInnerHTML={this.svg()} onClick={this.toggleRotated}></button>
 
     return (
-      <div className='device'>
+      <div className="device">
         <div className="device__wrap">
           <div className="tools">
             <div className="tools__group">
-              <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>
-                {device_title}
-              </button>
+              <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>{device_title}</button>
               {this.state.rotation ? rotate_button : ''}
             </div>
           </div>
-
           {dropdownDevices}
-
           <div className="screen">
-            <XrespondFrame name={device_title} id={this.props.id} />
+            <XrespondFrame id={this.props.id} name={this.state.name} />
           </div>
         </div>
       </div>

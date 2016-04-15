@@ -12,15 +12,16 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
 
+
     <script src="js/lib/react-with-addons.js"></script>
     <script src="js/lib/react-dom.js"></script>
-    <script src="js/lib/what-input.js"></script>
     <script src="js/lib/fuzzy.js"></script>
+    <script src="js/lib/what-input.js"></script>
 
-    <script src="js/lib/devices.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="js/lib/base_store.js"></script>
+    <script src="js/lib/devices.js"></script>
 
     <script src="js/mixins/message_bus.js"></script>
     <script src="js/mixins/toggle_expanded.js"></script>
@@ -35,9 +36,10 @@
     <script src="js/components/frame.js" type="text/jsx"></script>
     <script src="js/components/source.js" type="text/jsx"></script>
 
-    <script src="js/local.js"></script>
     <script src="js/defaults.js"></script>
+    <script src="js/local.js"></script>
     <script src="js/xrespond.js" type="text/jsx"></script>
+
 
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -99,100 +101,7 @@
 
       <main class="main" id="main">
         <div class="main__wrap">
-
-          <div class="device">
-            <div class="device__wrap">
-
-              <div class="tools">
-                <div class="tools__group">
-                  <button class="button button--medium tools__button device__button">Apple iPhone 5 ― 320 × 568 dp</button>
-                  <button class="button button--medium button--square tools__button">
-                    <svg class="icon button__icon">
-                      <title>Rotate screen</title>
-                      <use xlink:href="#icon-rotate-screen">
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <!-- /tools -->
-
-
-              <div class="dropdown dropdown--device">
-
-                <div class="search">
-                  <div class="search__title">Search for device</div>
-                  <input class="text-input text-input--small search__text-input" placeholder="Type, name, screen size">
-                </div>
-                <!-- /search -->
-
-
-                <div class="menu">
-                  <div class="menu__section">
-                    <div class="menu__title">Phone</div>
-                    <div class="menu-list">
-                      <div class="menu-list__item" tabindex="0">
-                        <div class="menu-list__title">Apple iPhone 5</div>
-                        <div class="menu-list__description">320 × 568 dp</div>
-                      </div>
-                      <div class="menu-list__item" tabindex="0">
-                        <div class="menu-list__title">Google Nexus 5</div>
-                        <div class="menu-list__description">360 × 640 dp</div>
-                      </div>
-                      <div class="menu-list__item" tabindex="0">
-                        <div class="menu-list__title">Apple iPhone 6</div>
-                        <div class="menu-list__description">375 × 667 dp</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu__section">
-                    <div class="menu__title">Laptop</div>
-                    <div class="menu-list">
-                      <div class="menu-list__item" tabindex="0">
-                        <div class="menu-list__title">Google Chromebook Pixel</div>
-                        <div class="menu-list__description">1280 × 850 dp</div>
-                      </div>
-                      <div class="menu-list__item" tabindex="0">
-                        <div class="menu-list__title">Apple MacBook Air 11.6"</div>
-                        <div class="menu-list__description">1366 × 768 dp</div>
-                      </div>
-                      <div class="menu-list__item" tabindex="0">
-                        <div class="menu-list__title">Apple MacBook Air 13.3"</div>
-                        <div class="menu-list__description">1440 × 900 dp</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /menu -->
-
-
-                <div class="custom-screen">
-                  <div class="custom-screen__title">Add custom screen</div>
-                  <input class="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="W">
-                  <div class="custom-screen__divider">×</div>
-                  <input class="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="H">
-                  <button class="button button--small button--submit custom-screen__button">Add</button>
-                </div>
-                <!-- /custom-screen -->
-
-
-                <div class="device-control">
-                  <button class="button button--small button--remove">Remove device</button>
-                </div>
-                <!-- /device-control -->
-
-              </div>
-              <!-- /dropdown -->
-
-
-              <div class="screen">
-                <iframe class="screen__viewport"></iframe>
-              </div>
-              <!-- /screen -->
-
-            </div>
-          </div>
-          <!-- /device -->
-
+          <!-- Components: XrespondDevices -->
         </div>
       </main>
       <!-- /main -->

@@ -31,7 +31,7 @@ var XrespondFrame = React.createClass({
   render: function() {
     var style = {width: this.state.width, height: this.state.height}
     return (
-      <iframe name={this.props.name} key={this.state.key} className="screen__viewport" src={this.state.url} style={style}></iframe>
+      <iframe className="screen__viewport" key={this.state.key} name={this.props.name} src={this.state.url} style={style}></iframe>
     )
   }
 })

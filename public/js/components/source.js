@@ -16,8 +16,8 @@ var XrespondSource = React.createClass({
   render: function() {
     return (
       <form className="source__wrap" onSubmit={this.handleSubmit}>
-        <input ref="source" className="text-input text-input--medium source__text-input" placeholder="Enter URL" defaultValue={this.state.url} onChange={this.handleChange} />
-        <button className="button button--medium button--submit source__button" type="submit">Respond</button>
+        <input className="text-input text-input--medium source__text-input" placeholder="Enter URL" ref="source" defaultValue={this.state.url} onChange={this.handleChange} />
+        <button className="button button--medium button--submit source__button">Respond</button>
       </form>
     )
   }
