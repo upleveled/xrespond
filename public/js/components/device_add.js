@@ -18,16 +18,15 @@ var XrespondDeviceAdd = React.createClass({
       : ''
 
     return (
-      <div className="device__wrap">
-        <div className="tools">
-          <div className="tools__group">
-            <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>
-              Add new device
-            </button>
+      <div className="device">
+        <div className="device__wrap">
+          <div className="tools">
+            <div className="tools__group">
+              <button className="button button--medium tools__button device__button" onClick={this.toggleExpanded}>Add new device</button>
+            </div>
           </div>
+          {dropdownDevices}
         </div>
-
-        {dropdownDevices}
       </div>
     )
   }
