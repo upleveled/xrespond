@@ -15,12 +15,10 @@ var XrespondSource = React.createClass({
   },
   render: function() {
     return (
-      <div className="source__wrap">
-        <form onSubmit={this.handleSubmit}>
-            <input ref="source" className="text-input text-input--medium source__text-input" placeholder="Enter URL" defaultValue={this.state.url} onChange={this.handleChange} />
-            <button className="button button--medium button--submit source__button" type="submit">Respond</button>
-        </form>
-      </div>
+      <form className="source__wrap" onSubmit={this.handleSubmit}>
+        <input ref="source" className="text-input text-input--medium source__text-input" placeholder="Enter URL" defaultValue={this.state.url} onChange={this.handleChange} />
+        <button className="button button--medium button--submit source__button" type="submit">Respond</button>
+      </form>
     )
   }
 })
