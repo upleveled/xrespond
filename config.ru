@@ -9,7 +9,7 @@ end
 
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
   username == 'dev' and password == 'dev'
-end if ENV['RACK_ENV'] == 'production'
+end unless ENV['RACK_ENV'] == 'production'
 
 require './app'
 run Sinatra::Application
