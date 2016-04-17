@@ -20,7 +20,7 @@ var XrespondCustomDevice = React.createClass({
   render: function() {
     return (
       <form className="custom-screen" onSubmit={this.handleSubmit}>
-        <div className="custom-screen__title">Add custom screen</div>
+        <div className="custom-screen__title">Custom screen size</div>
         <input className="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="W" value={this.state.width} onChange={this.handleChange} name="width" required />
         <div className="custom-screen__divider">×</div>
         <input className="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="H" value={this.state.height} onChange={this.handleChange} name="height" required />
