@@ -5,6 +5,7 @@
   box-shadow: 0 0.25em 0.5em rgba($wet-asphalt, 0.25);
   overflow: hidden;
   position: absolute;
+  z-index: 1;
 }
 
 .dropdown--device {
