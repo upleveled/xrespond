@@ -7,10 +7,11 @@ var XrespondDevice = React.createClass({
   },
   componentWillMount: function() {
     DeviceStore.registerAndInvoke(this._update)
+    document.addEventListener("keydown", this.handleEscKey, false)
   },
   componentWillUnmount: function() {
     DeviceStore.deregister(this._update)
-    document.removeEventListener("click", this.documentClickHandler)
+    document.removeEventListener("keydown", this.handleEscKey, false)
   },
   _update: function(devices) {
     var that = this
@@ -24,6 +25,11 @@ var XrespondDevice = React.createClass({
   svg: function() { return {__html: '<svg class="icon button__icon"><title>Rotate screen</title><use xlink:href="#icon-rotate-screen"></svg>'} },
   toggleRotated: function() {
     DeviceStore.update({id: this.props.id, width: this.state.height, height: this.state.width})
+  },
+  handleEscKey: function(event) {
+    if (event.keyCode == 27) {
+      this.setState({expanded: false})
+    }
   },
   render: function() {
 
