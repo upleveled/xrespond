@@ -58,21 +58,8 @@ html {
   background: #ffffff;
   color: #34495e;
   font-family: Proxima Nova, sans-serif;
-  font-size: 0.875em;
   line-height: 1;
   overflow: hidden;
-}
-
-@media screen and (min-width: 80em) {
-  html {
-    font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
-  }
-}
-
-@media screen and (min-width: 120em) {
-  html {
-    font-size: 1.125em;
-  }
 }
 
 .container {
@@ -473,7 +460,6 @@ html {
       -ms-flex: auto;
           flex: auto;
   margin-top: 1.25em;
-  overflow: hidden;
 }
 
 .main__wrap--stretch .screen__viewport {

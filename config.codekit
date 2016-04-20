@@ -163,17 +163,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/public\/js\/lib\/autotrack.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/lib\/autotrack.js",
-		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/autotrack-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
 	"\/public\/js\/lib\/base_store.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -202,50 +191,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/js\/lib\/fuzzy.js",
 		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/fuzzy-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/public\/js\/lib\/JSXTransformer.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/lib\/JSXTransformer.js",
-		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/JSXTransformer-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/public\/js\/lib\/react-dom.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/lib\/react-dom.js",
-		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/react-dom-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/public\/js\/lib\/react-with-addons.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/lib\/react-with-addons.js",
-		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/react-with-addons-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/public\/js\/lib\/underscore-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/lib\/underscore-min.js",
-		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/underscore-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

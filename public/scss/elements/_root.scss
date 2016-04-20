@@ -2,15 +2,6 @@ html {
   background: $white;
   color: $wet-asphalt;
   font-family: Proxima Nova, sans-serif;
-  font-size: 0.875em;
   line-height: 1;
   overflow: hidden;
-
-  @media screen and (min-width: 80em) {
-    font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
-  }
-
-  @media screen and (min-width: 120em) {
-    font-size: 1.125em;
-  }
 }
