@@ -9,7 +9,8 @@ var XrespondCustomDevice = React.createClass({
       name:  'Custom',
       id:     this.props.id,
       width:  parseInt(this.state.width),
-      height: parseInt(this.state.height)
+      height: parseInt(this.state.height),
+      rotation: true
     })
   },
   handleChange: function(e) {
