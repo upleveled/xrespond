@@ -3,6 +3,7 @@
   "scripts": {
   },
   "env": {
+    "RACK_ENV": "staging"
   },
   "addons": [
 
