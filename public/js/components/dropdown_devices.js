@@ -18,10 +18,6 @@ var XrespondDropdownDevices = React.createClass({
     this.setState({localClick: true})
     this.search('')
   },
-  handleKeyDown: function(e) {
-    // with console open, this gets triggered for any keypress within device search, but not escape!
-    debugger
-  },
   render: function() {
     var that = this;
     var sections = _.map(this.state.devices, function(list, label){
@@ -48,7 +44,7 @@ var XrespondDropdownDevices = React.createClass({
       <div className="dropdown dropdown--device">
         <div className="search">
           <div className="search__title">Search for device</div>
-          <input className="text-input text-input--small search__text-input" placeholder="Type, name, screen size" value={this.state.search} onChange={this.handleInputChange} onKeyDown={this.handleKeyDown} ref="deviceInput" />
+          <input className="text-input text-input--small search__text-input" placeholder="Type, name, screen size" value={this.state.search} onChange={this.handleInputChange} ref="deviceInput" />
         </div>
 
         <div className="menu">
