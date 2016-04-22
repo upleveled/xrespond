@@ -62,9 +62,9 @@ DeviceStore.setRemoveFunction(function(index, internal){
 })
 
 var mount = function(component, id) {
-  ReactDOM.render(component, document.getElementById(id))
+  ReactDOM.render(React.createElement(component), document.getElementById(id))
 }
 
-mount(<XrespondDevices />,      'main')
-mount(<XrespondSource />,       'source')
-mount(<XrespondDeviceHeight />, 'device-height')
+mount(XrespondDevices,      'main')
+mount(XrespondSource,       'source')
+mount(XrespondDeviceHeight, 'device-height')
