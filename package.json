@@ -1,0 +1,69 @@
+{
+  "name": "tycoon",
+  "description": "Expand your Airline to be the ultimate Tycoon!",
+  "version": "0.0.1",
+  "author": "Locomote (Various) <support@locomote.com>",
+  "bugs": "https://github.com/locomote/tycoon/issues",
+  "dependencies": {
+    "cjsx-loader": "^2.0.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-react-transform": "^3.1.0",
+    "coffee-script": "^1.9.3",
+    "css-loader": "^0.14.4",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-cssfont64": "0.0.1",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.4.2",
+    "gulp-size": "^1.2.1",
+    "gulp-util": "^3.0.5",
+    "jest-cli": "^0.4.5",
+    "lodash": "*",
+    "map-stream": "0.0.5",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-hot-loader": "^1.3.0",
+    "react-retina-image": "^1.3.3",
+    "react-router": "^0.13.3",
+    "style-loader": "^0.12.3",
+    "touch": "^1.0.0",
+    "underscore": "^1.8.3",
+    "victor": "^1.1.0",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "homepage": "https://github.com/locomote/tycoon",
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "testFileExtensions": [
+      "coffee",
+      "js",
+      "cjsx"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "coffee",
+      "cjsx"
+    ]
+  },
+  "keywords": [
+    "react",
+    "react-tools",
+    "quickstart",
+    "coffeescript",
+    "cjsx"
+  ],
+  "license": "MIT",
+  "main": "server.coffee",
+  "repository": "git@github.com:locomote/tycoon.git",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp watch",
+    "build": "./node_modules/.bin/gulp build",
+    "test": "jest"
+  }
+}
