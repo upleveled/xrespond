@@ -22,7 +22,7 @@ var XrespondDevice = React.createClass({
     DeviceStore.update(_.extend({}, attrs, {id: this.props.id}))
     this.toggleExpanded()
   },
-  svg: function() { return {__html: '<svg class="icon button__icon"><title>Rotate screen</title><use xlink:href="#icon-rotate-screen"></svg>'} },
+  svg: function() { return {__html: '<svg class="icon button__icon"><title>Rotate screen</title><use xlink:href="#icon-rotate-left"></svg>'} },
   toggleRotated: function() {
     DeviceStore.update({id: this.props.id, width: this.state.height, height: this.state.width})
   },
