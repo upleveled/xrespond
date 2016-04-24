@@ -429,6 +429,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/public\/components.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/components.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/css\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
