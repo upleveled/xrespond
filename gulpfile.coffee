@@ -13,11 +13,11 @@ $ = require('gulp-load-plugins')()
 
 # CSS
 gulp.task('css', ->
-  gulp.src(['src/styles/*.sass', 'src/styles/*.scss'])
+  gulp.src(['app/scss/styles/*.sass', 'app/scss/styles/*.scss'])
     .pipe($.compass({
       css: 'public/'
-      sass: 'src/styles'
-      image: 'src/styles/images'
+      sass: 'app/scss'
+      image: 'public/images'
       style: 'nested'
       comments: false
       bundle_exec: true
