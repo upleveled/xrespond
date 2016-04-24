@@ -1,2 +1,6 @@
 node_modules
 .sass-cache/
+
+# Ignore build files
+public/bundle*
+public/styles.css

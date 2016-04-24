@@ -113,6 +113,14 @@ gulp.task "webpack-dev-server", ['css'], (callback) ->
 
   return
 
+gulp.task 'prod-server', ['webpack:build'], ->
+  $.connect.server
+    root: ['./public'],
+    port: process.env.PORT || 5000,
+    livereload: false
+    middleware: (connect, opt) ->
+      if process.env.NODE_ENV != 'production' then [connect.basicAuth('dev','dev')] else []
+
 gulp.task 'default', ->
   gulp.start 'build'
 
