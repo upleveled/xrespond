@@ -1,4 +1,4 @@
-var Devices = [
+module.exports = Devices = [
   {
     "type": "Phone",
     "name": "Apple iPhone 5",

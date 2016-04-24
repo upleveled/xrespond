@@ -1,4 +1,4 @@
-XrespondDefaults = {
+module.exports = XrespondDefaults = {
   devices: function() {
     var deviceNames = [
       'Apple iPhone 5',
