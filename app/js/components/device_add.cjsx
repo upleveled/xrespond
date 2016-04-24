@@ -11,10 +11,17 @@ module.exports = DeviceAdd = React.createClass
     DeviceStore.create attrs
     @toggleExpanded()
 
+  dropdown: ->
+    <DropdownDevices
+      reset        = {true}
+      key          = {@props.id}
+      id           = {@props.id}
+      devices      = {Xrespond.devices_grouped()}
+      handleSubmit = {@handleDropdownSubmit}
+      handleBlur   = {@toggleExpanded}
+    />
+
   render: ->
-
-    dropdownDevices = if @state.expanded then <DropdownDevices reset={true} id={@props.id} devices={Xrespond.devices_grouped()} handleSubmit={@handleDropdownSubmit} handleBlur={@toggleExpanded} /> else ''
-
     <div className="device">
       <div className="device__wrap">
         <div className="tools">
@@ -22,6 +29,6 @@ module.exports = DeviceAdd = React.createClass
             <button className="button button--medium tools__button device__button" onClick={@toggleExpanded}>Add new device</button>
           </div>
         </div>
-        {dropdownDevices}
+        {if @state.expanded then @dropdown() else ''}
       </div>
     </div>
