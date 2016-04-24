@@ -52,7 +52,7 @@ module.exports = Device = React.createClass
         <div className="tools">
           <div className="tools__group">
             <button className="button button--medium tools__button device__button" onClick={@toggleExpanded}>{device_title}</button>
-            {@state.rotation ? rotate_button : ''}
+            {if @state.rotation then rotate_button else ''}
           </div>
         </div>
         {dropdownDevices}

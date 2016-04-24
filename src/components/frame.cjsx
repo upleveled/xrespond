@@ -26,7 +26,7 @@ module.exports = Frame = React.createClass
   _update: (devices) ->
     that = this
     device = _.filter devices, (d, index) -> index == that.props.id
-    @setState device[0]
+    @setState device[0] if !_.isEmpty device[0]
 
   render: ->
     style =

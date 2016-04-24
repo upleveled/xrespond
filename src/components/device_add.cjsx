@@ -1,3 +1,7 @@
+Xrespond        = require '../scripts/xrespond'
+DeviceStore     = require '../scripts/device_store'
+DropdownDevices = require '../components/dropdown_devices'
+
 module.exports = DeviceAdd = React.createClass
   mixins: [ ToggleExpanded ]
   getInitialState: ->
@@ -9,7 +13,7 @@ module.exports = DeviceAdd = React.createClass
 
   render: ->
 
-    dropdownDevices = if @state.expanded then <XrespondDropdownDevices reset={true} id={@props.id} devices={Xrespond.devices_grouped()} handleSubmit={@handleDropdownSubmit} handleBlur={@toggleExpanded} /> else ''
+    dropdownDevices = if @state.expanded then <DropdownDevices reset={true} id={@props.id} devices={Xrespond.devices_grouped()} handleSubmit={@handleDropdownSubmit} handleBlur={@toggleExpanded} /> else ''
 
     <div className="device">
       <div className="device__wrap">

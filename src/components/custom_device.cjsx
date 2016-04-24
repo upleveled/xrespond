@@ -1,3 +1,5 @@
+DeviceStore = require '../scripts/device_store'
+
 module.exports = CustomDevice = React.createClass
   getInitialState: ->
       width:  ''

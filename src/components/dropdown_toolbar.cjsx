@@ -1,3 +1,5 @@
+DeviceStore = require '../scripts/device_store'
+
 module.exports = DropdownToolbar = React.createClass
   handleRemove: ->
     if @props.reset
