@@ -9,6 +9,6 @@
 
   ],
   "buildpacks": [
-
+    { "url": "heroku/nodejs" }
   ]
 }
