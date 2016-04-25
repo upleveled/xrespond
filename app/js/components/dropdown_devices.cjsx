@@ -26,7 +26,7 @@ module.exports = DropdownDevices = React.createClass
     that = this
     sections = _.map(@state.devices, (list, label) ->
       devices = list.map((o, j) ->
-        <DropdownDevice key={o.name} name={o.name} width={o.width} height={o.height} handleSubmit={that.props.handleSubmit} />
+        <DropdownDevice key={o.name} name={o.name} name_marked={o.name_marked} width={o.width} height={o.height} handleSubmit={that.props.handleSubmit} />
       )
       <div className="menu__section" key={label}>
         <div className="menu__title">{label}</div>
