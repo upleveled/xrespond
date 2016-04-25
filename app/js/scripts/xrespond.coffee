@@ -10,8 +10,11 @@ module.exports = Xrespond =
   devices_search: (term) ->
     options = extract: (d) ->
       _.toArray(_.pick(d, 'type', 'name', 'width', 'height')).join ' '
-    results = fuzzy.filter(term, @devices(), options)
-    matches = _.pluck(results, 'original')
+
+    results        = fuzzy.filter term, @devices(), options
+    sorted_results = _.sortBy results, (o) -> o.index
+    matches        = _.pluck sorted_results, 'original'
+
     @group_devices_by_type matches
 
   device_by_name: (name) ->
