@@ -36,8 +36,9 @@ module.exports = Device = React.createClass
       height: @state.width
 
   handleEscKey: (event) ->
-    if event.keyCode == 27
+    if @state.expanded && event.keyCode == 27 # Escape key
       @setState expanded: false
+      @refs.dropdownButton.focus()
 
   render: ->
     dropdownDevices =
@@ -51,7 +52,7 @@ module.exports = Device = React.createClass
       <div className="device__wrap">
         <div className="tools">
           <div className="tools__group">
-            <button className="button button--medium tools__button device__button" onClick={@toggleExpanded}>{device_title}</button>
+            <button className="button button--medium tools__button device__button" onClick={@toggleExpanded} ref="dropdownButton">{device_title}</button>
             {if @state.rotation then rotate_button else ''}
           </div>
         </div>
