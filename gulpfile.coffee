@@ -113,13 +113,17 @@ gulp.task "webpack-dev-server", ['css'], (callback) ->
 
   return
 
+csp = (req, res, next) ->
+  res.setHeader 'Content-Security-Policy', "frame-ancestors 'none'"
+  next()
+
 gulp.task 'prod-server', ['webpack:build'], ->
   $.connect.server
     root: ['./public'],
     port: process.env.PORT || 5000,
     livereload: false
     middleware: (connect, opt) ->
-      if process.env.NODE_ENV != 'production' then [connect.basicAuth('dev','dev')] else []
+      if process.env.NODE_ENV != 'production' then [connect.basicAuth('dev','dev'),csp] else [csp]
 
 gulp.task 'default', ->
   gulp.start 'build'
