@@ -1,3 +1,5 @@
+XrespondDefaults = require('./defaults')
+
 XrespondLocal = function() {
   var that = this
   this.defaultState = function() {

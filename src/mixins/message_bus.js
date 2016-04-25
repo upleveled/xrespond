@@ -4,7 +4,7 @@
 var SUBSCRIPTIONS = '__subscriptions';
 var Registry = {};
 
-var MessageBus = {
+MessageBus = {
   registry: {},
   publish: function(channel, data) {
     if (Registry[channel]) {
