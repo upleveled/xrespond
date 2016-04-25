@@ -27,7 +27,7 @@ module.exports = XrespondDevices = React.createClass
 
   render: ->
     devices = @state.collection.map (p) -> <Device key={p.id} id={p.id} />
-    add_device = <DeviceAdd id={-1} />
+    add_device = <DeviceAdd key={@state.collection.length} id={@state.collection.length} />
     device_class = if @state.stretchsize then ' main__wrap--stretch' else ''
 
     <div className={'main__wrap' + device_class}>{devices}{add_device}</div>
