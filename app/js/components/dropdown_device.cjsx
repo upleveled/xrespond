@@ -1,3 +1,4 @@
+React    = require 'react'
 Xrespond = require '../scripts/xrespond'
 
 module.exports = DropdownDevice = React.createClass

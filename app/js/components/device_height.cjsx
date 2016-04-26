@@ -1,3 +1,5 @@
+React = require 'react'
+
 module.exports = DeviceHeight = React.createClass
   mixins: [ MessageBusMixin ]
   eventDefault: ->

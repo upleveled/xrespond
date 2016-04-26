@@ -21,6 +21,7 @@
     "lodash": "*",
     "map-stream": "0.0.6",
     "react": "^15.0.1",
+    "react-addons-update": "^15.0.1",
     "react-dom": "*",
     "react-hot-loader": "*",
     "react-retina-image": "^2.0.0",

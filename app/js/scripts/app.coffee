@@ -3,6 +3,9 @@ require '../lib/base_store'
 require '../mixins/message_bus'
 require '../mixins/toggle_expanded'
 
+React    = require 'react'
+ReactDOM = require 'react-dom'
+
 Devices      = require '../components/devices'
 Source       = require '../components/source'
 DeviceHeight = require '../components/device_height'

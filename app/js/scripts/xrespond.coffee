@@ -1,6 +1,8 @@
-require './local'
-fuzzy = require '../lib/fuzzy'
+_       = require 'underscore'
+fuzzy   = require '../lib/fuzzy'
 Devices = require '../lib/devices'
+
+require './local'
 
 module.exports = Xrespond =
   local: XrespondLocal()
