@@ -11,8 +11,7 @@ module.exports = Xrespond =
 
   devices_search: (term) ->
     options =
-      extract: (d) ->
-        _.toArray(_.pick(d, 'name')).join ' '
+      extract: (d) -> d.name
       pre: '<mark>'
       post: '</mark>'
 
