@@ -1,5 +1,5 @@
+require 'what-input'
 require '../lib/base_store'
-
 require '../mixins/message_bus'
 require '../mixins/toggle_expanded'
 
