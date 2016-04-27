@@ -50,13 +50,20 @@ csp = (req, res, next) ->
   res.setHeader 'Content-Security-Policy', "frame-ancestors 'none'"
   next()
 
+prodRedirect = (req, res, next) ->
+  if req.headers.host.indexOf('app.xrespond.com') == -1
+    res.writeHead 302, Location: 'app.xrespond.com'
+    res.end()
+  else
+    next()
+
 gulp.task 'prod-server', ['webpack:build'], ->
   $.connect.server
     root: ['./public'],
     port: process.env.PORT || 5000,
     livereload: false
     middleware: (connect, opt) ->
-      if process.env.NODE_ENV != 'production' then [connect.basicAuth('dev','dev'),csp] else [csp]
+      if process.env.NODE_ENV != 'production' then [connect.basicAuth('dev','dev'),csp] else [csp,prodRedirect]
 
 gulp.task 'default', -> gulp.start 'build'
 
