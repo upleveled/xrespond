@@ -15,7 +15,8 @@ module.exports = Xrespond =
       pre: '<mark>'
       post: '</mark>'
 
-    results        = fuzzy.filter term, @devices(), options
+    search = term.replace /\s/g, ''
+    results        = fuzzy.filter search, @devices(), options
     sorted_results = _.sortBy results, (o) -> o.index
     matches        = _.map sorted_results, (o) ->
       _.extend {}, o.original, name_marked: o.string
