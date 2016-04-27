@@ -12,10 +12,10 @@ module.exports = Xrespond =
   devices_search: (term) ->
     options =
       extract: (d) -> d.name
-      pre: '<mark>'
+      pre: '<mark class="menu-list__highlight">'
       post: '</mark>'
 
-    search = term.replace /\s/g, ''
+    search         = term.replace /\s/g, ''
     results        = fuzzy.filter search, @devices(), options
     sorted_results = _.sortBy results, (o) -> o.index
     matches        = _.map sorted_results, (o) ->

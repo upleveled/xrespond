@@ -23,8 +23,8 @@ module.exports = CustomDevice = React.createClass
   render: ->
     <form className="custom-screen" onSubmit={@handleSubmit}>
       <div className="custom-screen__title">Custom screen size</div>
-      <input className="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="W" value={@state.width} onChange={@handleChange} name="width" required />
+      <input className="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="w" value={@state.width} onChange={@handleChange} name="width" required />
       <div className="custom-screen__divider">×</div>
-      <input className="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="H" value={@state.height} onChange={@handleChange} name="height" required />
+      <input className="text-input text-input--small custom-screen__text-input" type="number" min="0" placeholder="h" value={@state.height} onChange={@handleChange} name="height" required />
       <button className="button button--small button--submit custom-screen__button" type="submit">Add</button>
     </form>
