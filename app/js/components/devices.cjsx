@@ -1,3 +1,4 @@
+React       = require 'react'
 Device      = require './device'
 DeviceAdd   = require './device_add'
 Xrespond    = require '../scripts/xrespond'

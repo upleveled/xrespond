@@ -1,3 +1,5 @@
+_ = require('underscore')
+
 module.exports = XrespondDefaults = {
   devices: function() {
     var deviceNames = [

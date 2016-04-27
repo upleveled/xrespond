@@ -1,3 +1,4 @@
+React           = require 'react'
 Xrespond        = require '../scripts/xrespond'
 DeviceStore     = require '../scripts/device_store'
 DropdownDevices = require '../components/dropdown_devices'
