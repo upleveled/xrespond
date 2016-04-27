@@ -52,7 +52,7 @@ csp = (req, res, next) ->
 
 prodRedirect = (req, res, next) ->
   if req.headers.host.indexOf('app.xrespond.com') == -1
-    res.writeHead 302, Location: 'app.xrespond.com'
+    res.writeHead 302, Location: 'http://app.xrespond.com'
     res.end()
   else
     next()
