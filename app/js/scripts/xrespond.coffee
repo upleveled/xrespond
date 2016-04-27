@@ -11,7 +11,7 @@ module.exports = Xrespond =
     options =
       extract: (d) ->
         _.toArray(_.pick(d, 'name')).join ' '
-      pre: '<mark>'
+      pre: '<mark class="menu-list__highlight">'
       post: '</mark>'
 
     results        = fuzzy.filter term, @devices(), options

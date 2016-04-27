@@ -54,3 +54,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.menu-list__highlight {
+  background: $clouds;
+  color: $peter-river;
+  font-weight: 600;
+}
