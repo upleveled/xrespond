@@ -1,3 +1,5 @@
+_           = require 'underscore'
+React       = require 'react'
 Xrespond    = require '../scripts/xrespond'
 DeviceStore = require '../scripts/device_store'
 

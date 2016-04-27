@@ -1,3 +1,6 @@
+_               = require 'underscore'
+React           = require 'react'
+ReactDOM        = require 'react-dom'
 Xrespond        = require '../scripts/xrespond'
 DropdownDevice  = require '../components/dropdown_device'
 CustomDevice    = require '../components/custom_device'

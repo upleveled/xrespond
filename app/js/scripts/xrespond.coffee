@@ -1,6 +1,8 @@
-require './local'
-fuzzy = require '../lib/fuzzy'
+_       = require 'underscore'
+fuzzy   = require '../lib/fuzzy'
 Devices = require '../lib/devices'
+
+require './local'
 
 module.exports = Xrespond =
   local: XrespondLocal()
@@ -9,12 +11,12 @@ module.exports = Xrespond =
 
   devices_search: (term) ->
     options =
-      extract: (d) ->
-        _.toArray(_.pick(d, 'name')).join ' '
+      extract: (d) -> d.name
       pre: '<mark class="menu-list__highlight">'
       post: '</mark>'
 
-    results        = fuzzy.filter term, @devices(), options
+    search         = term.replace /\s/g, ''
+    results        = fuzzy.filter search, @devices(), options
     sorted_results = _.sortBy results, (o) -> o.index
     matches        = _.map sorted_results, (o) ->
       _.extend {}, o.original, name_marked: o.string
