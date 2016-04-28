@@ -34,8 +34,8 @@ module.exports = Devices = [
   {
     "type": "Phone",
     "name": "Google Nexus 6",
-    "width": 412,
-    "height": 690,
+    "width": 411,
+    "height": 731,
     "rotation": true,
     "orientation": "portrait"
   },
