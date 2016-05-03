@@ -1,19 +1,17 @@
 .button {
-  background: $silver;
   border-radius: 0.25em;
   border: 0;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   font-weight: 600;
-  line-height: inherit;
-  padding: 0;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 
-// Sizes
+// Sizes -----------------------------------------
+
 .button--small {
   min-height: 2em;
   min-width: 3.75em;
@@ -26,6 +24,9 @@
   padding: 0 1.25em;
 }
 
+
+// Shapes ----------------------------------------
+
 .button--square {
   padding: 0;
 
@@ -35,19 +36,18 @@
 }
 
 
-// Colors
-.button--submit {
+// Colors ----------------------------------------
+
+.button--primary {
   background: $peter-river;
   color: $white;
 }
 
-.button--remove {
-  background: $alizarin;
-  color: $white;
+.button--secondary {
+  background: $silver;
 }
 
-
-// Elements
-.button__icon {
-  font-size: 1.5em;
+.button--danger {
+  background: $alizarin;
+  color: $white;
 }

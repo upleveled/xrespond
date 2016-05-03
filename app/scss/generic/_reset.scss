@@ -6,13 +6,22 @@ iframe {
   border: 0;
 }
 
+ol {
+  list-style-type: none;
+}
+
 body,
 button,
-input {
+input,
+ol {
   margin: 0;
 }
 
 button::-moz-focus-inner {
+  padding: 0;
+}
+
+ol {
   padding: 0;
 }
 

@@ -1,15 +1,14 @@
-.search {
-  display: flex;
-  flex-direction: column;
+.device-search {
   padding: 0.625em 1.25em;
 }
 
-.search__title {
+.device-search__title {
   color: $concrete;
   font-size: 0.75em;
   margin-bottom: 0.625rem;
 }
 
-.search__text-input {
+.device-search__text-input {
   background: $clouds;
+  width: 100%;
 }

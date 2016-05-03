@@ -1,0 +1,10 @@
+.button-toolbar {
+  align-items: center;
+  display: flex;
+}
+
+.button-toolbar__title {
+  color: $concrete;
+  margin-right: 1.25em;
+  text-align: right;
+}
