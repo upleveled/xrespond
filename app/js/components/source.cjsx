@@ -14,7 +14,7 @@ module.exports = XrespondSource = React.createClass
     if url.match(/^http/) or url == '' then url else 'http://' + url
 
   render: ->
-    <form className="source__wrap" onSubmit={@handleSubmit}>
-      <input className="text-input text-input--medium source__text-input" placeholder="Enter URL" ref="source" defaultValue={@state.url} onChange={@handleChange} />
-      <button className="button button--medium button--submit source__button">Respond</button>
+    <form className="source-url__wrap" onSubmit={@handleSubmit}>
+      <input className="text-input text-input--medium source-url__text-input" defaultValue={@state.url} onChange={@handleChange} placeholder="Enter URL" ref="source" />
+      <button className="button button--medium button--primary source-url__button">Respond</button>
     </form>

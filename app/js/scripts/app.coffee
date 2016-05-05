@@ -1,3 +1,4 @@
+require 'what-input'
 require '../lib/base_store'
 require '../mixins/message_bus'
 require '../mixins/toggle_expanded'
@@ -20,5 +21,5 @@ mount = (component, id) -> ReactDOM.render React.createElement(component), docum
 
 document.addEventListener 'DOMContentLoaded', (event) ->
   mount Devices, 'main'
-  mount Source, 'source'
+  mount Source, 'source-url'
   mount DeviceHeight, 'device-height'

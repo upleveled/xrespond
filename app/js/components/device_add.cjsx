@@ -23,13 +23,13 @@ module.exports = DeviceAdd = React.createClass
     />
 
   render: ->
-    <div className="device">
+    <article className="device">
       <div className="device__wrap">
-        <div className="tools">
-          <div className="tools__group">
-            <button className="button button--medium tools__button device__button" onClick={@toggleExpanded}>Add new device</button>
+        <div className="device-control">
+          <div className="button-group">
+            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded}>Add new device</button>
           </div>
+          {if @state.expanded then @dropdown() else ''}
         </div>
-        {if @state.expanded then @dropdown() else ''}
       </div>
-    </div>
+    </article>

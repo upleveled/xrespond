@@ -1,8 +1,10 @@
-// Settings
+// Settings --------------------------------------
+
 @import "settings/colors";
 
 
-// Generic
+// Generic ---------------------------------------
+
 @import "generic/box-model";
 @import "generic/cursors";
 @import "generic/focus";
@@ -10,31 +12,41 @@
 @import "generic/web-fonts";
 
 
-// Elements
+// Elements --------------------------------------
+
 @import "elements/root";
 
 
-// Objects
+// Objects ---------------------------------------
+
 @import "objects/container";
 @import "objects/icon";
 
 
-// Components
+// Components ------------------------------------
+
 @import "components/button";
+@import "components/button-group";
+@import "components/button-toolbar";
+@import "components/dropdown";
+@import "components/menu";
 @import "components/text-input";
 
+
+// Regions
 @import "components/header";
 @import "components/main";
 @import "components/toolbar";
 
+
+// Widgets
 @import "components/custom-screen";
 @import "components/device";
 @import "components/device-control";
 @import "components/device-height";
-@import "components/dropdown";
+@import "components/device-search";
 @import "components/logo";
-@import "components/menu";
+@import "components/remove-device";
 @import "components/screen";
-@import "components/search";
-@import "components/source";
-@import "components/tools";
+@import "components/screen-width";
+@import "components/source-url";

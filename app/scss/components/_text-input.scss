@@ -6,13 +6,14 @@
   font-size: inherit;
 
   &::placeholder {
-    color: mix($white, $wet-asphalt, 50%);
+    color: $concrete;
     opacity: 1;
   }
 }
 
 
-// Sizes
+// Sizes -----------------------------------------
+
 .text-input--small {
   height: 2em;
   padding: 0 0.5em;

@@ -5,7 +5,12 @@
   box-shadow: 0 0.25em 0.5em rgba($wet-asphalt, 0.25);
   overflow: hidden;
   position: absolute;
+  top: 100%;
   z-index: 1;
+
+  .device:last-child:not(:only-child) & {
+    right: 0;
+  }
 }
 
 .dropdown--device {

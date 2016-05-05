@@ -29,7 +29,7 @@ module.exports = Device = React.createClass
     @toggleExpanded()
 
   svg: ->
-    __html: '<svg class="icon button__icon"><title>Rotate screen</title><use xlink:href="#icon-rotate-left"></svg>'
+    __html: '<svg class="icon icon--large"><title>Rotate screen</title><use xlink:href="#icon-rotate-left"></use></svg>'
 
   toggleRotated: ->
     DeviceStore.update
@@ -47,20 +47,20 @@ module.exports = Device = React.createClass
       if (@state.expanded) then <DropdownDevices reset={false} id={@props.id} devices={Xrespond.devices_grouped()} handleSubmit={@handleDropdownSubmit} handleBlur={@toggleExpanded} />
       else ''
 
-    device_title = "#{@state.name} ― #{@state.width} × #{@state.height} dp"
-    rotate_button = <button className="button button--medium button--square tools__button" dangerouslySetInnerHTML={@svg()} onClick={@toggleRotated}></button>
+    rotate_button = <button className="button button--medium button--square button--secondary button-group__button" dangerouslySetInnerHTML={@svg()} onClick={@toggleRotated}></button>
 
-    <div className="device">
+    <article className="device">
       <div className="device__wrap">
-        <div className="tools">
-          <div className="tools__group">
-            <button className="button button--medium tools__button device__button" onClick={@toggleExpanded} ref="dropdownButton">{device_title}</button>
+        <div className="device-control">
+          <div className="button-group">
+            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded} ref="dropdownButton">{@state.name}</button>
             {if @state.rotation then rotate_button else ''}
           </div>
+          {dropdownDevices}
         </div>
-        {dropdownDevices}
+        <div className="screen-width" style={{minWidth:@state.width+2}}>{@state.width} × {@state.height} dp</div>
         <div className="screen">
-          <Frame id={@props.id} name={@state.name} />
+          <Frame id={@props.id} name={'XRespond – ' + @state.name} />
         </div>
       </div>
-    </div>
+    </article>

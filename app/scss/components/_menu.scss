@@ -3,9 +3,7 @@
   overflow-y: auto;
 }
 
-.menu__section {
-
-}
+.menu__section {}
 
 .menu__title {
   align-items: center;
@@ -48,15 +46,15 @@
   text-overflow: ellipsis;
 }
 
+.menu-list__highlight {
+  background: $clouds;
+  color: $peter-river;
+  font-weight: 600;
+}
+
 .menu-list__description {
   color: $concrete;
   font-size: 0.75em;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.menu-list__highlight {
-  background: $clouds;
-  color: $peter-river;
-  font-weight: 600;
 }

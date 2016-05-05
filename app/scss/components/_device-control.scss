@@ -1,5 +1,8 @@
 .device-control {
-  background: $clouds;
-  border-top: 1px solid $silver;
-  padding: 0.625em 1.25em;
+  flex: none;
+  position: relative;
+}
+
+.device-control__button {
+  text-transform: none;
 }

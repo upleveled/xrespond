@@ -1,0 +1,26 @@
+.screen-width {
+  align-items: center;
+  color: $concrete;
+  display: flex;
+  flex: none;
+  margin-top: 1.25em;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    border-top: 1px solid $silver;
+    content: "";
+  }
+
+  &::before {
+    flex: none;
+    margin-right: 0.625em;
+    width: 0.625em;
+  }
+
+  &::after {
+    flex: auto;
+    margin-left: 0.625em;
+    min-width: 0.625em;
+  }
+}
