@@ -31,36 +31,33 @@ module.exports = DropdownDevices = React.createClass
       devices = list.map((o, j) ->
         <DropdownDevice key={o.name} name={o.name} name_marked={o.name_marked} width={o.width} height={o.height} handleSubmit={that.props.handleSubmit} />
       )
-      <div className="menu__section" key={label}>
+      <li className="menu__section" key={label}>
         <div className="menu__title">{label}</div>
-        <div className="menu-list">
+        <ol className="menu-list">
           {devices}
-        </div>
-      </div>
+        </ol>
+      </li>
     )
-    empty = <div className="menu__section">
-              <div className="menu-list">
+    empty = <li className="menu__section">
+              <ol className="menu-list">
                 <DropdownDevice name="No device found" subtitle="Show all devices" handleSubmit={@handleClear} />
-              </div>
-            </div>
+              </ol>
+            </li>
 
     <div className="dropdown dropdown--device">
-      <div className="search">
-        <div className="search__title">Search for device</div>
-        <input className="text-input text-input--small search__text-input" placeholder="Type, name, screen size" value={@state.search} onChange={@handleInputChange} ref="deviceInput" />
+      <div className="device-search">
+        <div className="device-search__title">Search for device</div>
+        <input autoFocus className="text-input text-input--small device-search__text-input" onChange={@handleInputChange} placeholder="Enter device name" value={@state.search} />
       </div>
-
-      <div className="menu">
+      <ol className="menu">
         {if _.isEmpty(@state.devices) then empty else sections}
-      </div>
-
+      </ol>
       <CustomDevice id={@props.id} />
       <DropdownToolbar reset={@props.reset} id={@props.id} />
     </div>
 
   componentDidMount: ->
     document.addEventListener 'click', @documentClickHandler
-    @refs.deviceInput.focus()
 
   componentWillUnmount: ->
     document.removeEventListener 'click', @documentClickHandler

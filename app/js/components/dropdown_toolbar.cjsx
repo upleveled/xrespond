@@ -11,6 +11,6 @@ module.exports = DropdownToolbar = React.createClass
   render: ->
     remove_text = if @props.reset then 'Reset devices' else 'Remove device'
 
-    <div className="device-control">
-      <button className="button button--small button--remove" onClick={@handleRemove}>{remove_text}</button>
+    <div className="remove-device">
+      <button className="button button--small button--danger remove-device__button" onClick={@handleRemove}>{remove_text}</button>
     </div>

@@ -21,5 +21,5 @@ mount = (component, id) -> ReactDOM.render React.createElement(component), docum
 
 document.addEventListener 'DOMContentLoaded', (event) ->
   mount Devices, 'main'
-  mount Source, 'source'
+  mount Source, 'source-url'
   mount DeviceHeight, 'device-height'

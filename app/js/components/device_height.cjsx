@@ -9,10 +9,10 @@ module.exports = DeviceHeight = React.createClass
     @publish 'deviceHeight', true
 
   render: ->
-    <div className="tools">
-      <div className="tools__title">Device height</div>
-      <div className="tools__group">
-        <button className="button button--medium tools__button" onClick={@eventDefault}>Default</button>
-        <button className="button button--medium tools__button" onClick={@eventStretch}>Stretch</button>
+    <div className="button-toolbar">
+      <div className="button-toolbar__title">Device height</div>
+      <div className="button-group">
+        <button className="button button--medium button--secondary button-group__button" onClick={@eventDefault}>Default</button>
+        <button className="button button--medium button--secondary button-group__button" onClick={@eventStretch}>Stretch</button>
       </div>
     </div>
