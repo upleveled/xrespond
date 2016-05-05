@@ -199,6 +199,10 @@ html {
   z-index: 1;
 }
 
+.device:last-child:not(:only-child) .dropdown {
+  right: 0;
+}
+
 .dropdown--device {
   width: 17.5em;
 }
