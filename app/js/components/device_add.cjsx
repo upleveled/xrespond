@@ -27,7 +27,14 @@ module.exports = DeviceAdd = React.createClass
       <div className="device__wrap">
         <div className="device-control">
           <div className="button-group">
-            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded}>Add new device</button>
+            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded}>
+              <div className="button__wrap">
+                Add new device
+                <svg className="icon icon--medium button__icon">
+                  <use xlinkHref="#icon-dropdown"></use>
+                </svg>
+              </div>
+            </button>
           </div>
           {if @state.expanded then @dropdown() else ''}
         </div>
