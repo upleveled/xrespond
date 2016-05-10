@@ -9,6 +9,11 @@
   white-space: nowrap;
 }
 
+.button__wrap {
+  align-items: center;
+  display: flex;
+}
+
 
 // Sizes -----------------------------------------
 
@@ -50,4 +55,11 @@
 .button--danger {
   background: $alizarin;
   color: $white;
+}
+
+
+// Elements --------------------------------------
+
+.button__icon {
+  margin: 0 -0.5rem 0 0.5rem;
 }
