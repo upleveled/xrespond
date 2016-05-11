@@ -46,17 +46,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/app\/js\/lib\/what-input.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/js\/lib\/what-input.js",
-		"outputAbbreviatedPath": "\/app\/js\/lib\/min\/what-input-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/app\/js\/mixins\/message_bus.js": {
 		"fileType": 64,
 		"ignore": 0,

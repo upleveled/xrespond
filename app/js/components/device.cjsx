@@ -28,9 +28,6 @@ module.exports = Device = React.createClass
     DeviceStore.update _.extend({}, attrs, id: @props.id)
     @toggleExpanded()
 
-  svg: ->
-    __html: '<svg class="icon icon--large"><title>Rotate screen</title><use xlink:href="#icon-rotate-left"></use></svg>'
-
   toggleRotated: ->
     DeviceStore.update
       id: @props.id
@@ -47,13 +44,25 @@ module.exports = Device = React.createClass
       if (@state.expanded) then <DropdownDevices reset={false} id={@props.id} devices={Xrespond.devices_grouped()} handleSubmit={@handleDropdownSubmit} handleBlur={@toggleExpanded} />
       else ''
 
-    rotate_button = <button className="button button--medium button--square button--secondary button-group__button" dangerouslySetInnerHTML={@svg()} onClick={@toggleRotated}></button>
+    rotate_button = <button className="button button--medium button--square button--secondary button-group__button" onClick={@toggleRotated}>
+                      <svg className="icon icon--large">
+                        <title>Rotate screen</title>
+                        <use xlinkHref="#icon-rotate-left"></use>
+                      </svg>
+                    </button>
 
     <article className="device">
       <div className="device__wrap">
         <div className="device-control">
           <div className="button-group">
-            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded} ref="dropdownButton">{@state.name}</button>
+            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded} ref="dropdownButton">
+              <div className="button__wrap">
+                {@state.name}
+                <svg className="icon icon--medium button__icon">
+                  <use xlinkHref="#icon-dropdown"></use>
+                </svg>
+              </div>
+            </button>
             {if @state.rotation then rotate_button else ''}
           </div>
           {dropdownDevices}
