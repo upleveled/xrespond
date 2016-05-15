@@ -97,7 +97,7 @@ module.exports = Devices = [
   },
   {
     "type": "Tablet",
-    "name": "Apple iPad Pro",
+    "name": "Apple iPad Pro 12.9\"",
     "width": 1024,
     "height": 1366,
     "rotation": true,

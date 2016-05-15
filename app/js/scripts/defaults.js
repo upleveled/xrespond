@@ -6,7 +6,7 @@ module.exports = XrespondDefaults = {
       'Apple iPhone 5',
       'Google Nexus 7',
       'Apple iPad Air',
-      'Apple iPad Pro',
+      'Apple iPad Pro 12.9\"',
       'Apple MacBook Air 11.6\"'
     ]
     return defaultDevices = _.map(deviceNames, function(name, i){
