@@ -10,6 +10,7 @@
     "coffee-react-transform": "^4.0.0",
     "coffee-script": "^1.9.3",
     "css-loader": "^0.23.1",
+    "fuzzy": "^0.1.1",
     "gulp": "^3.9.0",
     "gulp-connect": "^4.0.0",
     "gulp-load-plugins": "^1.2.4",

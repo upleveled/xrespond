@@ -1,5 +1,5 @@
 _       = require 'underscore'
-fuzzy   = require '../lib/fuzzy'
+fuzzy   = require 'fuzzy'
 Devices = require '../lib/devices'
 
 require './local'
