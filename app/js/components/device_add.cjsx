@@ -5,6 +5,13 @@ DropdownDevices = require '../components/dropdown_devices'
 
 module.exports = DeviceAdd = React.createClass
   mixins: [ ToggleExpanded ]
+
+  componentWillMount: ->
+    document.addEventListener 'keydown', @handleEscKey, false
+
+  componentWillUnmount: ->
+    document.removeEventListener 'keydown', @handleEscKey, false
+
   getInitialState: ->
     expanded: false
 
@@ -22,12 +29,17 @@ module.exports = DeviceAdd = React.createClass
       handleBlur   = {@toggleExpanded}
     />
 
+  handleEscKey: (event) ->
+    if @state.expanded && event.keyCode == 27 # Escape key
+      @setState expanded: false
+      @refs.dropdownButton.focus()
+
   render: ->
     <article className="device">
       <div className="device__wrap">
         <div className="device-control">
           <div className="button-group">
-            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded}>
+            <button className="button button--medium button--secondary button-group__button device-control__button" onClick={@toggleExpanded} ref="dropdownButton">
               <div className="button__wrap">
                 Add new device
                 <svg className="icon icon--medium button__icon">
