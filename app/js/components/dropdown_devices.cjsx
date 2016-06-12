@@ -44,7 +44,7 @@ module.exports = DropdownDevices = React.createClass
               </ol>
             </li>
 
-    <div className="dropdown dropdown--device">
+    <div className="dropdown device-control__dropdown">
       <div className="device-search">
         <div className="device-search__title">Search for device</div>
         <input autoFocus className="text-input text-input--small device-search__text-input" onChange={@handleInputChange} placeholder="Enter device name" value={@state.search} />

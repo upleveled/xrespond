@@ -216,14 +216,6 @@ html {
   z-index: 1;
 }
 
-.device:last-child:not(:only-child) .dropdown {
-  right: 0;
-}
-
-.dropdown--device {
-  width: 17.5em;
-}
-
 .menu {
   max-height: 20em;
   overflow-y: auto;
@@ -457,6 +449,10 @@ html {
 
 .device-control__button {
   text-transform: none;
+}
+
+.device-control__dropdown {
+  width: 17.5em;
 }
 
 .device-height {
