@@ -390,6 +390,38 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/app\/scss\/components\/_share-toggle.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scss\/components\/_share-toggle.scss",
+		"outputAbbreviatedPath": "\/public\/css\/_share-toggle.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"\/app\/scss\/components\/_share.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scss\/components\/_share.scss",
+		"outputAbbreviatedPath": "\/public\/css\/_share.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/app\/scss\/components\/_source-url.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,

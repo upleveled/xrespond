@@ -547,6 +547,34 @@ html {
   min-width: 0.625em;
 }
 
+.share {
+  padding: 0.625em 1.25em;
+}
+
+.share__title {
+  color: #95a5a6;
+  font-size: 0.875em;
+  margin-bottom: 0.625rem;
+}
+
+.share__text-input {
+  background: #ecf0f1;
+  width: 100%;
+}
+
+.share-toggle {
+  margin-left: auto;
+}
+
+.share-toggle__wrap {
+  position: relative;
+}
+
+.share-toggle__dropdown {
+  right: 0;
+  width: 30em;
+}
+
 .source-url {
   margin-left: 2.5em;
 }
