@@ -42,6 +42,6 @@
     "underscore": "^1.8.3",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
-    "what-input": "^2.1.0"
+    "what-input": "^2.1.1"
   }
 }
