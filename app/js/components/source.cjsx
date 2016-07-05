@@ -1,5 +1,6 @@
-React    = require 'react'
-Xrespond = require('../scripts/xrespond')
+React           = require 'react'
+Xrespond        = require('../scripts/xrespond')
+MessageBusMixin = require '../mixins/message_bus'
 
 module.exports = XrespondSource = React.createClass
   mixins: [ MessageBusMixin ]
