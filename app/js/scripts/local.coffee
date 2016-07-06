@@ -1,10 +1,10 @@
 XrespondDefaults = require('./defaults')
 
-# fakeStorate =
-#   getItem: (_) -> null
-#   save:    (_) -> null
+fakeStorage =
+  getItem: (_) -> null
+  save:    (_) -> null
 
-# localStorate = fakeStorage unless localStorage?
+localStorage = fakeStorage unless localStorage?
 
 module.exports = XrespondLocal =
   defaultState: ->
