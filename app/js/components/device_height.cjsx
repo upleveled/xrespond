@@ -1,4 +1,5 @@
-React = require 'react'
+React           = require 'react'
+MessageBusMixin = require '../mixins/message_bus'
 
 module.exports = DeviceHeight = React.createClass
   mixins: [ MessageBusMixin ]

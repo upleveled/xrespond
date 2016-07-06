@@ -1,7 +1,8 @@
 _           = require 'underscore'
 React       = require 'react'
-Xrespond    = require './xrespond'
 ReactUpdate = require 'react-addons-update' # @todo can we just use underscore instead?
+Xrespond    = require './xrespond'
+BaseStore   = require '../lib/base_store'
 
 # @TODO: simplify store usage?
 module.exports = DeviceStore = BaseStore(Xrespond.local.attr('devices'))

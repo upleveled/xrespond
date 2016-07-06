@@ -1,8 +1,9 @@
-React       = require 'react'
-Device      = require './device'
-DeviceAdd   = require './device_add'
-Xrespond    = require '../scripts/xrespond'
-DeviceStore = require '../scripts/device_store'
+React           = require 'react'
+Device          = require './device'
+DeviceAdd       = require './device_add'
+Xrespond        = require '../scripts/xrespond'
+DeviceStore     = require '../scripts/device_store'
+MessageBusMixin = require '../mixins/message_bus'
 
 module.exports = XrespondDevices = React.createClass
   mixins: [ MessageBusMixin ]

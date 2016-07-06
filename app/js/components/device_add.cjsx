@@ -1,6 +1,7 @@
 React           = require 'react'
 Xrespond        = require '../scripts/xrespond'
 DeviceStore     = require '../scripts/device_store'
+ToggleExpanded  = require '../mixins/toggle_expanded'
 DropdownDevices = require '../components/dropdown_devices'
 
 module.exports = DeviceAdd = React.createClass
