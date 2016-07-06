@@ -1,9 +1,9 @@
-jest.unmock('../app/js/components/Source');
+jest.disableAutomock()
 
-React =     require 'react'
-ReactDOM =  require 'react-dom'
+React     = require 'react'
+ReactDOM  = require 'react-dom'
 TestUtils = require 'react-addons-test-utils'
-Source =    require '../app/js/components/Source'
+Source    = require '../../app/js/components/Source'
 
 describe 'Source', =>
   it 'renders', =>
