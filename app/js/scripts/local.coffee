@@ -1,5 +1,11 @@
 XrespondDefaults = require('./defaults')
 
+# fakeStorate =
+#   getItem: (_) -> null
+#   save:    (_) -> null
+
+# localStorate = fakeStorage unless localStorage?
+
 module.exports = XrespondLocal =
   defaultState: ->
     devices: XrespondDefaults.devices()
@@ -16,7 +22,7 @@ module.exports = XrespondLocal =
     @load()[attr_name]
 
   updateAttr: (attr_name) ->
-    (data) ->
+    (data) =>
       local = @load()
       local[attr_name] = data
       @save local
