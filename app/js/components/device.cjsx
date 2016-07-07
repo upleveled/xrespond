@@ -48,7 +48,7 @@ module.exports = Device = React.createClass
     rotate_button = <button className="button button--medium button--square button--secondary button-group__button" onClick={@toggleRotated}>
                       <svg className="icon icon--large">
                         <title>Rotate screen</title>
-                        <use xlinkHref="#icon-rotate-left"></use>
+                        <use xlinkHref="images/icons.svg#icon-rotate-left"/>
                       </svg>
                     </button>
 
@@ -60,7 +60,7 @@ module.exports = Device = React.createClass
               <div className="button__wrap">
                 {@state.name}
                 <svg className="icon icon--medium button__icon">
-                  <use xlinkHref="#icon-dropdown"></use>
+                  <use xlinkHref="images/icons.svg#icon-arrow-drop-down"/>
                 </svg>
               </div>
             </button>
