@@ -10,4 +10,4 @@ describe 'Source', =>
     source = TestUtils.renderIntoDocument(<Source />)
     sourceNode = ReactDOM.findDOMNode(source)
 
-    expect(sourceNode.textContent).toEqual('Respond')
+    expect(sourceNode.textContent).toEqual('Load URL')
