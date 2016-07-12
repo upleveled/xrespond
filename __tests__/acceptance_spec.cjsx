@@ -3,8 +3,8 @@ jest.disableAutomock()
 React     = require 'react'
 ReactDOM  = require 'react-dom'
 TestUtils = require 'react-addons-test-utils'
-Source    = require '../app/js/components/Source'
-Frame     = require '../app/js/components/Frame'
+Source    = require '../app/js/components/source'
+Frame     = require '../app/js/components/frame'
 
 describe 'Entering source URL', =>
   it 'loads URL on Frame components', =>

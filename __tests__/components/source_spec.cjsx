@@ -3,7 +3,7 @@ jest.disableAutomock()
 React     = require 'react'
 ReactDOM  = require 'react-dom'
 TestUtils = require 'react-addons-test-utils'
-Source    = require '../../app/js/components/Source'
+Source    = require '../../app/js/components/source'
 
 describe 'Source', =>
   it 'renders', =>
