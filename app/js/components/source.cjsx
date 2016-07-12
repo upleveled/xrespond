@@ -1,5 +1,6 @@
-React    = require 'react'
-Xrespond = require('../scripts/xrespond')
+React           = require 'react'
+Xrespond        = require('../scripts/xrespond')
+MessageBusMixin = require '../mixins/message_bus'
 
 module.exports = XrespondSource = React.createClass
   mixins: [ MessageBusMixin ]
@@ -15,6 +16,6 @@ module.exports = XrespondSource = React.createClass
 
   render: ->
     <form className="source-url__wrap" onSubmit={@handleSubmit}>
-      <input className="text-input text-input--medium source-url__text-input" defaultValue={@state.url} onChange={@handleChange} placeholder="Enter URL" ref="source" />
+      <input className="text-input text-input--medium source-url__text-input" defaultValue={@state.url} placeholder="Enter URL" ref="source" />
       <button className="button button--medium button--primary source-url__button">Load URL</button>
     </form>

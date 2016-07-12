@@ -1,11 +1,10 @@
-_       = require 'underscore'
-fuzzy   = require 'fuzzy'
-Devices = require '../lib/devices'
-
-require './local'
+_             = require 'underscore'
+fuzzy         = require 'fuzzy'
+Devices       = require '../lib/devices'
+XrespondLocal = require './local'
 
 module.exports = Xrespond =
-  local: XrespondLocal()
+  local: XrespondLocal
   devices: -> Devices
   devices_grouped: -> @group_devices_by_type @devices()
 

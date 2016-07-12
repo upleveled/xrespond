@@ -1,7 +1,8 @@
-_           = require 'underscore'
-React       = require 'react'
-Xrespond    = require '../scripts/xrespond'
-DeviceStore = require '../scripts/device_store'
+_               = require 'underscore'
+React           = require 'react'
+Xrespond        = require '../scripts/xrespond'
+DeviceStore     = require '../scripts/device_store'
+MessageBusMixin = require '../mixins/message_bus'
 
 module.exports = Frame = React.createClass
   mixins: [ MessageBusMixin ]
