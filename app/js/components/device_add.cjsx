@@ -44,7 +44,7 @@ module.exports = DeviceAdd = React.createClass
               <div className="button__wrap">
                 Add new device
                 <svg className="icon icon--medium button__icon">
-                  <use xlinkHref="#icon-dropdown"></use>
+                  <use xlinkHref="images/icons.svg#icon-arrow-drop-down"/>
                 </svg>
               </div>
             </button>
