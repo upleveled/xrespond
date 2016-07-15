@@ -3,11 +3,10 @@
 Registry = global.Registry = {}
 module.exports = MessageBus =
   registry: {}
-  skey: '__subscriptions'
   publish: (channel, data) ->
     if Registry[channel]
-      Registry[channel].forEach (subscriber) ->
-        subscriber[@skey][channel].call subscriber, data
+      Registry[channel].forEach (subscriber) =>
+        subscriber['__subscriptions'][channel].call subscriber, data
         return
     return
   subscribe: (component, channel, callback) ->
@@ -15,14 +14,14 @@ module.exports = MessageBus =
     if !Registry[channel]
       Registry[channel] = []
     Registry[channel].push component
-    if !component[@skey]
-      component[@skey] = {}
-    component[@skey][channel] = callback
+    if !component['__subscriptions']
+      component['__subscriptions'] = {}
+    component['__subscriptions'][channel] = callback
     return
   unsubscribe: (component, channel) ->
     if Registry[channel]
       nth = Registry[channel].indexOf(component)
       if nth > -1
         Registry[channel].splice nth, 1
-      delete component[@skey][channel]
+      delete component['__subscriptions'][channel]
     return
