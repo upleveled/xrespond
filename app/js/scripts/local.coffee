@@ -1,11 +1,12 @@
 XrespondDefaults = require '../lib/defaults'
+MessageBusMixin  = require '../mixins/message_bus'
 
 fakeStorage =
   getItem: (_) -> null
   setItem: (_) -> null
   save:    (_) -> null
 
-if localStorage?
+if window.localStorage?
   localStorage = window.localStorage
 else
   localStorage = fakeStorage
@@ -20,6 +21,7 @@ module.exports = XrespondLocal =
     JSON.parse(localStorage.getItem('xrespond')) or @defaultState()
 
   save: (local) ->
+    MessageBusMixin.publish 'settingsSave'
     localStorage.setItem 'xrespond', JSON.stringify(local)
 
   attr: (attr_name) ->
