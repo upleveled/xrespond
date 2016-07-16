@@ -1,4 +1,4 @@
-XrespondDefaults = require('./defaults')
+XrespondDefaults = require '../lib/defaults'
 
 fakeStorage =
   getItem: (_) -> null

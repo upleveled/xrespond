@@ -9,7 +9,6 @@ Devices      = require '../components/devices'
 Source       = require '../components/source'
 DeviceHeight = require '../components/device_height'
 
-require('./defaults')
 require('./local')
 Xrespond = require('./xrespond')
 

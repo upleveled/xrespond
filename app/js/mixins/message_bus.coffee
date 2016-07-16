@@ -9,5 +9,5 @@ module.exports = MessageBusMixin =
     MessageBus.unsubscribe this, channel
     return
   componentWillUnmount: ->
-    Object.keys(@[SUBSCRIPTIONS]).forEach @unsubscribe
+    Object.keys(@['__subscriptions']).forEach @unsubscribe
     return
