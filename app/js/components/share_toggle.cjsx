@@ -1,6 +1,7 @@
 React           = require 'react'
 base64          = require 'base64-js'
 
+ClickSource     = require '../lib/click_source'
 ToggleExpanded  = require '../mixins/toggle_expanded'
 MessageBusMixin = require '../mixins/message_bus'
 
@@ -10,20 +11,37 @@ module.exports = ShareToggle = React.createClass
   componentDidMount: ->
     @subscribe 'settingsSave', @_update
 
+  componentWillMount: ->
+    document.addEventListener 'keydown', @handleEscKey, false
+    document.addEventListener 'click', @documentClickHandler
+
   componentWillUnmount: ->
     @unsubscribe 'settingsSave'
+    document.removeEventListener 'keydown', @handleEscKey, false
+    document.removeEventListener 'click', @documentClickHandler
 
   getInitialState: ->
-    url: @_generateUrl()
+    url: @generateUrl()
     expanded: false
 
   _update: ->
-    @setState url: @_generateUrl()
+    @setState url: @generateUrl()
 
-  _generateUrl: ->
+  generateUrl: ->
     # @TODO Generic way to access the backend?
     sharedata = btoa(window.localStorage.xrespond)
     window.location.host + '/?share=' + sharedata
+
+  handleBlur: ->
+    @setState expanded: false
+    @refs.dropdownButton.focus()
+
+  handleEscKey: (event) ->
+    if @state.expanded && event.keyCode == 27 # Escape key
+      @handleBlur()
+
+  documentClickHandler: (evt) ->
+    if ClickSource.isGlobal(evt, @) then @handleBlur()
 
   urlBox: ->
     <div className="dropdown share-toggle__dropdown">
@@ -37,6 +55,6 @@ module.exports = ShareToggle = React.createClass
     box = if @state.expanded then @urlBox() else ''
 
     <div className="share-toggle__wrap">
-      <button className="button button--medium button--secondary" onClick={@toggleExpanded}>Share</button>
+      <button className="button button--medium button--secondary" onClick={@toggleExpanded} ref="dropdownButton">Share</button>
       {box}
     </div>
