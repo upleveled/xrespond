@@ -1,5 +1,6 @@
-React       = require 'react'
-DeviceStore = require '../scripts/device_store'
+React            = require 'react'
+DeviceStore      = require '../scripts/device_store'
+XrespondDefaults = require '../lib/defaults'
 
 module.exports = DropdownToolbar = React.createClass
   handleRemove: ->
