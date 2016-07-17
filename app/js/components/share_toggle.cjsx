@@ -39,11 +39,11 @@ module.exports = ShareToggle = React.createClass
   handleBlur: ->
     if @state.expanded
       @setState expanded: false
-      @refs.dropdownButton.focus()
 
   handleEscKey: (event) ->
     if @state.expanded && event.keyCode == 27 # Escape key
       @handleBlur()
+      @refs.dropdownButton.focus()
 
   documentClickHandler: (evt) ->
     if ClickSource.isGlobal(evt, @) then @handleBlur()
