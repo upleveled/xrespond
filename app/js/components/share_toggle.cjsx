@@ -4,6 +4,7 @@ base64          = require 'base64-js'
 ClickSource     = require '../lib/click_source'
 ToggleExpanded  = require '../mixins/toggle_expanded'
 MessageBusMixin = require '../mixins/message_bus'
+XrespondLocal   = require '../scripts/local'
 
 module.exports = ShareToggle = React.createClass
   mixins: [ ToggleExpanded, MessageBusMixin ]
@@ -32,8 +33,7 @@ module.exports = ShareToggle = React.createClass
     @setState url: @generateUrl()
 
   generateUrl: ->
-    # @TODO Generic way to access the backend?
-    sharedata = btoa(window.localStorage.xrespond)
+    sharedata = btoa(JSON.stringify(XrespondLocal.load()))
     window.location.host + '/?share=' + sharedata
 
   handleBlur: ->
