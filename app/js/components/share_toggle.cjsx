@@ -37,8 +37,9 @@ module.exports = ShareToggle = React.createClass
     window.location.host + '/?share=' + sharedata
 
   handleBlur: ->
-    @setState expanded: false
-    @refs.dropdownButton.focus()
+    if @state.expanded
+      @setState expanded: false
+      @refs.dropdownButton.focus()
 
   handleEscKey: (event) ->
     if @state.expanded && event.keyCode == 27 # Escape key
