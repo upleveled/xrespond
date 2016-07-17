@@ -20,6 +20,10 @@ module.exports = ShareToggle = React.createClass
     document.removeEventListener 'keydown', @handleEscKey, false
     document.removeEventListener 'click', @documentClickHandler
 
+  componentDidUpdate: ->
+    if @state.expanded
+      @refs.input.setSelectionRange(0,100000)
+
   getInitialState: ->
     url: @generateUrl()
     expanded: false
@@ -47,7 +51,7 @@ module.exports = ShareToggle = React.createClass
     <div className="dropdown share-toggle__dropdown">
       <div className="share">
         <div className="share__title">Copy the following link to share this view with anyone</div>
-        <input type='text' className="text-input text-input--small share__text-input" value={@state.url} readOnly />
+        <input type='text' className="text-input text-input--small share__text-input" value={@state.url} readOnly ref="input" />
       </div>
     </div>
 
