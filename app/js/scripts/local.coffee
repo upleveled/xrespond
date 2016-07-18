@@ -1,10 +1,16 @@
 XrespondDefaults = require '../lib/defaults'
+MessageBus       = require '../lib/message_bus'
+url              = require 'url'
 
 fakeStorage =
   getItem: (_) -> null
+  setItem: (_) -> null
   save:    (_) -> null
 
-localStorage = fakeStorage unless localStorage?
+if window.localStorage?
+  localStorage = window.localStorage
+else
+  localStorage = fakeStorage
 
 module.exports = XrespondLocal =
   defaultState: ->
@@ -13,10 +19,13 @@ module.exports = XrespondLocal =
     stretch: false
 
   load: ->
-    JSON.parse(localStorage.getItem('xrespond')) or @defaultState()
+    @shared() or JSON.parse(localStorage.getItem('xrespond')) or @defaultState()
 
   save: (local) ->
+    return if @shared()
+
     localStorage.setItem 'xrespond', JSON.stringify(local)
+    MessageBus.publish 'settingsSave', local
 
   attr: (attr_name) ->
     @load()[attr_name]
@@ -26,3 +35,8 @@ module.exports = XrespondLocal =
       local = @load()
       local[attr_name] = data
       @save local
+
+  shared: ->
+    url_parts = url.parse(window.location.href, true)
+    query = url_parts.query
+    if query.share? then JSON.parse(atob(query.share)) else false

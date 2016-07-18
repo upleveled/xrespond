@@ -7,12 +7,4 @@
   position: absolute;
   top: 100%;
   z-index: 1;
-
-  .device:last-child:not(:only-child) & {
-    right: 0;
-  }
-}
-
-.dropdown--device {
-  width: 17.5em;
 }

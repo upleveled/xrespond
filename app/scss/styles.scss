@@ -12,9 +12,9 @@
 @import "generic/web-fonts";
 
 
-// Elements --------------------------------------
+// Base ------------------------------------------
 
-@import "elements/root";
+@import "base/root";
 
 
 // Objects ---------------------------------------
@@ -32,12 +32,10 @@
 @import "components/menu";
 @import "components/text-input";
 
-
 // Regions
 @import "components/header";
 @import "components/main";
 @import "components/toolbar";
-
 
 // Widgets
 @import "components/custom-screen";
@@ -49,4 +47,6 @@
 @import "components/remove-device";
 @import "components/screen";
 @import "components/screen-width";
+@import "components/share";
+@import "components/share-toggle";
 @import "components/source-url";

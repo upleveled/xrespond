@@ -2,6 +2,7 @@ _               = require 'underscore'
 React           = require 'react'
 ReactDOM        = require 'react-dom'
 Xrespond        = require '../scripts/xrespond'
+ClickSource     = require '../lib/click_source'
 DropdownDevice  = require '../components/dropdown_device'
 CustomDevice    = require '../components/custom_device'
 DropdownToolbar = require '../components/dropdown_toolbar'
@@ -44,7 +45,7 @@ module.exports = DropdownDevices = React.createClass
               </ol>
             </li>
 
-    <div className="dropdown dropdown--device">
+    <div className="dropdown device-control__dropdown">
       <div className="device-search">
         <div className="device-search__title">Search for device</div>
         <input autoFocus className="text-input text-input--small device-search__text-input" onChange={@handleInputChange} placeholder="Enter device name" value={@state.search} />
@@ -76,15 +77,4 @@ module.exports = DropdownDevices = React.createClass
   documentClickHandler: (evt) ->
     return if @localClick()
 
-    # https://github.com/facebook/react/issues/579
-    localNode = ReactDOM.findDOMNode(@)
-    source = evt.target
-    found = false
-    # if source=local then @event came from "somewhere" inside and should be ignored.
-    while source.parentNode
-      found = (source == localNode)
-      return if found
-      source = source.parentNode
-
-    # not found: genuine outside event. Handle it.
-    @props.handleBlur()
+    if ClickSource.isGlobal(evt, @) then @props.handleBlur()

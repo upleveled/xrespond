@@ -216,14 +216,6 @@ html {
   z-index: 1;
 }
 
-.device:last-child:not(:only-child) .dropdown {
-  right: 0;
-}
-
-.dropdown--device {
-  width: 17.5em;
-}
-
 .menu {
   max-height: 20em;
   overflow-y: auto;
@@ -353,8 +345,6 @@ html {
       -ms-flex: auto;
           flex: auto;
   overflow: auto;
-  position: relative;
-  z-index: 1;
 }
 
 .main__wrap {
@@ -387,8 +377,6 @@ html {
           flex: none;
   min-height: 5em;
   padding: 1.25em 2.5em;
-  position: relative;
-  z-index: 2;
 }
 
 .custom-screen {
@@ -407,7 +395,7 @@ html {
 
 .custom-screen__title {
   color: #95a5a6;
-  font-size: 0.75em;
+  font-size: 0.875em;
   margin-bottom: 0.625rem;
   width: 100%;
 }
@@ -461,6 +449,10 @@ html {
   text-transform: none;
 }
 
+.device-control__dropdown {
+  width: 17.5em;
+}
+
 .device-height {
   margin-left: auto;
 }
@@ -471,7 +463,7 @@ html {
 
 .device-search__title {
   color: #95a5a6;
-  font-size: 0.75em;
+  font-size: 0.875em;
   margin-bottom: 0.625rem;
 }
 
@@ -551,6 +543,34 @@ html {
           flex: auto;
   margin-left: 0.625em;
   min-width: 0.625em;
+}
+
+.share {
+  padding: 0.625em 1.25em;
+}
+
+.share__title {
+  color: #95a5a6;
+  font-size: 0.875em;
+  margin-bottom: 0.625rem;
+}
+
+.share__text-input {
+  background: #ecf0f1;
+  width: 100%;
+}
+
+.share-toggle {
+  margin-left: auto;
+}
+
+.share-toggle__wrap {
+  position: relative;
+}
+
+.share-toggle__dropdown {
+  right: 0;
+  width: 30em;
 }
 
 .source-url {
