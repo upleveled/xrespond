@@ -48,7 +48,7 @@
     "what-input": "^3.0.0"
   },
   "devDependencies": {
-    "jest-cli": "^13.2.3",
+    "jest-cli": "^14.0.0",
     "react-addons-test-utils": "^15.2.0",
     "react-dom": "^15.2.0"
   },
