@@ -63,7 +63,7 @@ gulp.task 'prod-server', ['webpack:build'], ->
     port: process.env.PORT || 5000,
     livereload: false
     middleware: (connect, opt) ->
-      if process.env.NODE_ENV != 'production' then [connect.basicAuth('dev','dev'),csp] else [csp,prodRedirect]
+      if process.env.NODE_ENV != 'production' then [connect.basicAuth('kisnip','jotrog'),csp] else [csp,prodRedirect]
 
 gulp.task 'default', -> gulp.start 'build'
 
