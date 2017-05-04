@@ -68,7 +68,7 @@ module.exports = Device = React.createClass
           </div>
           {dropdownDevices}
         </div>
-        <div className="screen-width" style={{minWidth:@state.width+2}}>{@state.width} × {@state.height} dp</div>
+        <div className="screen-width">{@state.width} × {@state.height} dp</div>
         <div className="screen">
           <Frame id={@props.id} name={'XRespond – ' + @state.name} />
         </div>
