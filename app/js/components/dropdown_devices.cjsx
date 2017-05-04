@@ -41,7 +41,7 @@ module.exports = DropdownDevices = React.createClass
     )
     empty = <li className="menu__section">
               <ol className="menu-list">
-                <DropdownDevice name="No device found" subtitle="Show all devices" handleSubmit={@handleClear} />
+                <DropdownDevice name="No devices found" subtitle="Show all devices" handleSubmit={@handleClear} />
               </ol>
             </li>
 

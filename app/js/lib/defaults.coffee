@@ -15,9 +15,4 @@ module.exports = XrespondDefaults =
       )
       _.extend {}, d, id: i
     )
-  url: _.sample([
-    'http://wesbos.com/',
-    'http://www.heydonworks.com/',
-    'https://csswizardry.com/',
-    'https://marcysutton.com/',
-  ])
+  url: 'https://alistapart.com/d/responsive-web-design/ex/ex-site-FINAL.html'
