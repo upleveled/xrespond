@@ -14,11 +14,6 @@
 }
 
 .screen__viewport {
-  transition-duration: 0.25s;
-  transition-property: height, width;
-  transition-timing-function: ease-out;
-  will-change: height, width;
-
   .main__wrap--stretch & {
     height: auto !important;
     min-height: 100%; // IE & Edge fix
