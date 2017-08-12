@@ -1,9 +1,9 @@
 {
   "name": "xrespond",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Virtual device lab for responsive web design, development and testing",
   "repository": "https://github.com/indrekpaas/xrespond.git",
-  "author": "XRespond Pty Ltd",
+  "author": "XRespond",
   "main": "app/js/scripts/xrespond.coffee",
   "scripts": {
     "start": "./node_modules/.bin/gulp watch",

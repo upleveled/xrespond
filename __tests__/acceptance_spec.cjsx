@@ -14,8 +14,8 @@ describe 'Entering source URL', =>
     sourceNode = ReactDOM.findDOMNode(source)
     frameNode = ReactDOM.findDOMNode(frame)
 
-    enteredUrl = 'mario.net.au'
-    expectedUrl = 'http://mario.net.au'
+    enteredUrl = 'alistapart.com/d/responsive-web-design/ex/ex-site-FINAL.html'
+    expectedUrl = 'http://alistapart.com/d/responsive-web-design/ex/ex-site-FINAL.html'
 
     source.refs.source.value = enteredUrl
     TestUtils.Simulate.submit(sourceNode)

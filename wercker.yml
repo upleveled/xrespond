@@ -26,9 +26,3 @@ build:
     - npm-install
     # A step that executes `npm test` command
     - npm-test
-  # Steps that are executed after a pipeline run has either failed or passed
-  after-steps:
-    - slack-notifier:
-      url: https://hooks.slack.com/services/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
-      channel: notifications
-      username: wercker
