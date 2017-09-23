@@ -1,23 +1,18 @@
+# XRespond
 
-### Installation
+Virtual device lab for responsive web design, development and testing
+
+http://app.xrespond.com/
+
+## The Why, What and How
+
+[Meet XRespond Testing Tool: Let’s Make Building Responsive Websites Simpler](https://www.smashingmagazine.com/2017/09/xrespond-building-responsive-websites-simpler/) on Smashing Magazine
+
+## Development
 
 ```
-npm install -g gulp
 npm install
-```
-
-### Development
-
-```
 npm start
 ```
 
-- Automatically re-compiles on changes
-- Supports `.js`, `.coffee`, `.cjsx`
-- Live reload of both CSS and JS (keep console open however, may sometimes fail to refresh)
-
-### Production
-
-The `prod-server` gulp task will be run to serve production. This compiles assets on deploy and the serves static files using `gulp-connect`.
-
-Non-prod environments (`ENV['NODE_ENV'] != 'production'`) will present password prompt for user/pass dev/dev.
+**Note:** [CodeKit](https://codekitapp.com/) is used to process SCSS files
