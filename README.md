@@ -2,7 +2,7 @@
 
 Virtual device lab for responsive web design, development and testing
 
-http://app.xrespond.com/
+https://xrespond.netlify.com/
 
 ## The Why, What and How
 
