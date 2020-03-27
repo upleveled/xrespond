@@ -10,21 +10,6 @@
     "build": "./node_modules/.bin/gulp build",
     "test": "jest"
   },
-  "keywords": [
-    "app",
-    "design",
-    "development",
-    "device",
-    "emulate",
-    "lab",
-    "responsive",
-    "testing",
-    "tool",
-    "virtual",
-    "web",
-    "website",
-    "xrespond"
-  ],
   "dependencies": {
     "base64-js": "^1.1.2",
     "cjsx-loader": "^3.0.0",
