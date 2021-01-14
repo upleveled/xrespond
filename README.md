@@ -1,8 +1,10 @@
 # XRespond
 
+⚠️ FORK: This has been forked to disable the checkered pattern in the background: https://github.com/indrekpaas/xrespond/issues/7
+
 Virtual device lab for responsive web design, development and testing
 
-https://xrespond.netlify.com/
+https://xrespond-upleveled.netlify.app/
 
 ## The Why, What and How
 
