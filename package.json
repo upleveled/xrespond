@@ -28,7 +28,7 @@
     "svg4everybody": "^2.1.0",
     "touch": "^1.0.0",
     "underscore": "^1.8.3",
-    "webpack": "^1.13.2",
+    "webpack": "^5.0.0",
     "webpack-dev-server": "^1.15.0",
     "what-input": "^3.0.0"
   },
