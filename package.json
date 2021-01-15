@@ -30,7 +30,7 @@
     "underscore": "^1.8.3",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.0",
-    "what-input": "^3.0.0"
+    "what-input": "^5.0.0"
   },
   "devDependencies": {
     "jest-cli": "14.1.0",
