@@ -7,8 +7,8 @@
   },
   "packageRules": [
     {
-      "packageNames": ["coffee-loader"],
-      "allowedVersions": "<0.8.0"
+      "packageNames": ["react-dom"],
+      "allowedVersions": "<=15.6.2"
     }
   ]
 }
