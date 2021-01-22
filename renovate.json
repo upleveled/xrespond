@@ -4,5 +4,11 @@
   ],
   "major": {
     "enabled": false
-  }
+  },
+  "packageRules": [
+    {
+      "packageNames": ["coffee-loader"],
+      "allowedVersions": "<0.8.0"
+    }
+  ]
 }
