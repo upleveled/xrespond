@@ -16,9 +16,9 @@
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.10.0",
     "fuzzy": "^0.1.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-connect": "^5.0.0",
-    "gulp-load-plugins": "^1.2.4",
+    "gulp-load-plugins": "^2.0.1",
     "gulp-util": "^3.0.7",
     "map-stream": "0.0.7",
     "react": "^15.3.1",
@@ -28,8 +28,8 @@
     "svg4everybody": "^2.1.0",
     "touch": "^1.0.0",
     "underscore": "^1.8.3",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.11.4",
     "what-input": "^3.0.0"
   },
   "devDependencies": {
