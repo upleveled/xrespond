@@ -37,6 +37,9 @@
     "react-addons-test-utils": "15.6.2",
     "react-dom": "15.7.0"
   },
+  "overrides": {
+    "graceful-fs": ">=4.2.11"
+  },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
     "unmockedModulePathPatterns": [
